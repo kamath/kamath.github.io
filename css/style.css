@@ -4,16 +4,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
-@import url(https://raw.githubusercontent.com/TalksLab/metro-bootstrap/master/dist/css/metro-bootstrap.min.css);
+@import url(metro-bootstrap.min.css);
 @-webkit-keyframes puls { 0% {color: #45CEEF;} 25% {color: #FFF5A5;} 50% {color: #FFD4DA;} 75% {color: #99D2E4;} 100% {color: #D8CAB4;} } 
 
 .spinner {
   width: 30px;
   height: 30px;
-  background-color: #fff;
-  position: relative;
-  top: 30%;
-  margin: 100px auto;
+  background-color: black;
+  margin: 25% auto;
   -webkit-animation: rotateplane 1.2s infinite ease-in-out;
   animation: rotateplane 1.2s infinite ease-in-out;
 }
@@ -37,80 +35,27 @@
   }
 }
 
-body
-{
-	background: orange;
-}
-
 li
 {
-	font-size: 20px
+  font-size: 20px
 }
 
-nav
+li a 
 {
-	background: blue;
-}
-
-nav a
-{
-	color: #FFF;
-}
-
-td
-{
-	height: 50px;
-	width: 50px;
-	margin: 5px
-}
-
-#red
-{
-	background: red
-}
-
-#green
-{
-	background: green
-}
-
-#blue
-{
-	background: blue
-}
-
-#yellow
-{
-	background: yellow
-}
-
-.jumbotron .container
-{
-	width: 100%;
-	padding: 0;
-	color: #fff;
+  color: black
 }
 
 .jumbotron
 {
-	background: purple;
-	margin: 0;
-	height: 100%
+  margin-bottom: 0;
 }
 
 p
 {
-	font-size: 20px
+  font-size: 20px
 }
 
-
-#aboutme
+.projects .container a
 {
-	background: blue;
-	color: #fff
-}
-
-.aboutme .container
-{
-	padding-bottom: 20px
+  color: black
 }
