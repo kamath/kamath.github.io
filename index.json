@@ -18,5 +18,14 @@
 		"website link": "http://andykamath.com/bae",
 		"skills utilized": "Bootstrap framework for HTML, jQuery.js, HTML5, CSS, and Javascript",
 		"description": "Bae button. Nuff said",
+	},
+	{
+		"name": "Blue",
+		"website link": "http://andykamath.com/BlueWebsite",
+		"skills utilized": "Bootstrap framework for HTML, jQuery.js, HTML5, CSS, and Javascript",
+		"description": "Website template for potential customers"
+	},
+	{
+		"name"
 	}]
 }]
