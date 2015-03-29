@@ -5,44 +5,147 @@
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(metro-bootstrap.min.css);
+@import url(sidebar.css);
+
+/*Simple reset*/
+* {margin: 0; padding: 0;}
+
+body
+{
+	overflow-x:hidden;
+}
+
+p
+{
+  font-size: 24px
+}
+
+canvas {
+	display: block;
+}
+
+a
+{
+  color: #FFF
+}
 
 .jumbotron
 {
+  background: #00261C;
   height: 100%;
+  color: #FFF;
+  position:relative;
   margin-bottom: 0;
-  background: url(../img/bg.jpg);
-  background-size: 100% 100%;
-  color: #fff;
 }
 
-.jumbotron .container
+#about
 {
-  margin-top: 20%
+	background: #044C29;
+	color: #FFF
 }
 
-.background-image {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
+.sub
+{
+  height: 500px;
+}
 
+#designs
+{
+  background-color: #167F39;
+  color: #FFF
+}
+
+#web
+{
+  background-color: #45BF55;
+  color: #FFF
+}
+
+.stuff
+{
+  display: inline;
+  font-size: 36px;
+}
+
+.main
+{
+  font-size: 72px;
+}
+
+.webshow
+{
+  color: #FFF
+}
+
+.currentlyactive
+{
+  text-decoration: underline;
+}
+
+.desc
+{
+  padding-left: 50;
+  padding-right: 50
+}
+
+.webshow:hover
+{
+  color: #FFF
+}
+
+.jumbocontainer
+{
+  height: 100%;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.overlay
+{
+  position:absolute; top:20px; left:30px;
+}
+
+#main
+{
+  position: relative;
+}
+
+.container
+{
+  position: absolute;
+}
+
+#menu-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#menu-toggle span, #menu-toggle span:before, #menu-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
   display: block;
-  background-image: url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_527bf56961712_1.JPG');
-  width: 1200px;
-  height: 800px;
-
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  content: '';
+}
+#menu-toggle span:before {
+  top: -10px; 
+}
+#menu-toggle span:after {
+  bottom: -10px;
 }
 
-.content {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  margin-left: 20px;
-  margin-right: 20px;
+#menu-toggle span, #menu-toggle span:before, #menu-toggle span:after {
+  transition: all 500ms ease-in-out;
 }
+#menu-toggle.active span {
+  background-color: transparent;
+}
+#menu-toggle.active span:before, #menu-toggle.active span:after {
+  top: 0;
+}
+#menu-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#menu-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+

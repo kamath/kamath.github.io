@@ -1,221 +1,184 @@
 <html>
-	<head>
-		<script type="text/javascript" src="js/jQuery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/WOW.js"></script>
-		<script type="text/javascript">new WOW().init();</script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<title>Andy Kamath</title>
-		<script>
-			$(function() {
-	  			$('a[href*=#]:not([href=#])').click(function() {
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
-					{
-						var target = $(this.hash);
-      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      					if (target.length) {
-        					$('html,body').animate({
-          						scrollTop: target.offset().top
-        					}, 1000);
-        					return false;
-      					}
-					}
-    				this.toggleClass("active");
-  				});
-			});				
-		</script>
-	</head>
-	<body>
-		<!-- Fixed navbar -->
-    	<nav class="navbar navbar-inverse navbar-fixed-top">
-      		<div class="container">
-        		<div class="navbar-header">
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            			<span class="sr-only">Toggle navigation</span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-          			</button>
-          			<a class="navbar-brand" href="#">Andy Kamath</a>
-        		</div>
-        		<div id="navbar" class="navbar-collapse collapse">
-          			<ul class="nav navbar-nav">
-            			<li><a href="#">Home</a></li>
-            			<li><a href="#about">About</a></li>
-        				<li><a href="#contact">Contact</a></li>
-          			</ul>
-    			</div><!--/.nav-collapse -->
-      		</div>
-		</nav>
-		<div class="wholething">
-			<div class="jumbotron">
-				<div class="container jumbocontainer" align="center">
-					<h1>The name is Andy Kamath</h1>
-					<h2 id="about"></h2>
-				</div>
-			</div>
-			<div class="aboutme" id="about" align="center">
-				<div class="background-image"></div>
-				<div class="container content">
-					<h1>About Me</h1>
-					<p class="wow zoomIn">I'm a creative full-stack web developer as well as C# developer. I like to make websites and code for people. I am also a sophomore and Honors/AP student pursuing a career in Computer Science</p>
-				</div>
-				<hr>
-			</div>
-			<div class="projects" align="center" id="projects">
-				<div class="container">
-					<nav class="navbar navbar-inverse" style="width:360px;z-index:100">
-  						<div class="container-fluid" align="center">
-    						<!-- Brand and toggle get grouped for better mobile display -->
-    						<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-    								<span class="sr-only">Toggle navigation</span>
-        							<span class="icon-bar"></span>
-        							<span class="icon-bar"></span>
-        							<span class="icon-bar"></span>
-      							</button>
-      							<a class="navbar-brand" href="#"></a>
-    						</div>
+  <head>
+    <title>Andy Kamath</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/WOW.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    <script type="text/javascript" src="js/jQuery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><img src="img/me.jpg" class="img img-circle" height="70" style="left:50"></li>
+          <li class="sidebar-brand">
+            <a href="#">
+              Andy Kamath
+            </a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/developer?id=Hackgician+Apps"><i class="fa fa-google"></i> Google Play Account</a>
+          </li>
+          <li>
+            <a href="http://github.com/andykamath"><i class="fa fa-github"></i> GitHub</a>
+          </li>
+          <li>
+            <a href="http://youtube.com/MrCandonce"><i class="fa fa-youtube-play"></i> YouTube</a>
+          </li>
+          <li>
+            <a href="http://facebook.com/hackgician"><i class="fa fa-facebook"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="http://linkedin.andykamath.com"><i class="fa fa-linkedin"></i> LinkedIn</a>
+          </li>
+          <li>
+            <a href="http://twitter.andykamath.com"><i class="fa fa-twitter"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="http://instagram.com/baendy"><i class="fa fa-instagram"></i> Instagram</a>
+          </li>
+          <li>
+            <a href="http://medium.com/@andykamath"><i class="fa fa-pencil"></i> Blog</a>
+          </li>
+          <li>
+            <a href="mailto:andy@hackgician.net"><i class="fa fa-envelope"></i> Email: andy@hackgician.net</a>
+          </li>
+        </ul>
+      </div>
+      <div class="toggle"><a id="menu-toggle" href="#" style="position:fixed;margin-top:5px;z-index:100"><span></span></a></div>
+      <div class="jumbotron">
+        <canvas id="canvas"></canvas>
+        <div class="container overlay jumbocontainer">
+          <div class="row">
+            <div class="col-xs-9">
+              <h1>I'm Andy Kamath</h1>
+              <h2>I live in a world of imagination. And Charlotte, NC.</h2>
+            </div>
+            <div class="col-xs-3"></div>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="jumbotron sub">
+        <div class="container">
+          <h1>About Me</h1>
+          <p>I am an all-round developer specializing in web development. I do my back-end work with Node.js, Rails, or Laravel with MySQL, Sqlite3, or MongoDB. I do my front-end work in HTML5, CSS3, and Javascript. I am currently working on cross-platform app development using Apache Cordova.</p>
+          <br>
+          <p>Apart from developing, I am a pentalingual polyglot, if I say so myself (that's English, Latin, Sanskrit, Attic Greek, and my family's language of Konkani). I have won multiple awards in STEM competitions such as scoring in the 85th percentile of the AMC Math Test for two years, and medaling multiple times in Science Olympiad and TSA. I am also a gold medalist in the National Latin Exam, have won the State championships in Certamen (a Latin trivia game), and have acheived first place in the state for Latin Sight Reading.</p>
+        </div>
+      </div>
+      <div id="designs" class="jumbotron sub">
+        <div class="container">
+          <ul class="stuff">
+            <li class="stuff main">Web Designs</li>
+            <li class="stuff">&middot;</li>
+            <li class="stuff"><a class="webshow navigation b">Blue</a></li>
+            <li class="stuff">&middot;</li>
+            <li class="stuff"><a class="webshow navigation p">PHS JCL</a></li>
+          </ul>
+          <div class="desc blue wow fadeIn">
+            <h1>Blue</h1>
+            <p>This design is a template for an upscale restaurant located in Charlotte. You can view it <a href="http://andykamath.com/BlueWebsite" style="color:#FFF"><strong>here</strong></a></p>
+            <p>Made with HTML5, Bootstrap, and jQuery</p>
+            <p>Link: <a href="http://andykamath.com/BlueWebsite">here</a></p>
+          </div>
+          <div class="desc phsjcl wow fadeIn">
+            <h1>Providence Latin Club</h1>
+            <p>Providence High School's Junior Classical League (My school's Latin Club) required a website to enter into competition, and I was appointed webmaster. <strong><a href="http://phsjcl.com" style="color:#FFF">This</a></strong> is what I made for them</p>
+            <p>Made with skel, HTML5, and Javascript</p>
+            <p>Link: <a href="http://phsjcl.com">here</a></p>
+          </div>
+        </div>
+      </div>
 
-    						<!-- Collect the nav links, forms, and other content for toggling -->
-    						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      							<ul class="nav navbar-nav">
-    								<li><a href="#projects" id="designs">Designs</a></li>
-        							<li><a href="#projects" id="desktop">Desktop</a></li>
-        							<li><a href="#projects" id="web">Web</a></li>
-        							<li><a href="#projects" id="phone">Phone</a></li>
-        						</ul>
-      						</div><!-- /.navbar-collapse -->
-  						</div><!-- /.container-fluid -->
-					</nav>
-					<div class="row">
-						<div class="col-md-6 animated fadeIn designs">
-							<h1><a href="http://andykamath.com/BlueWebsite">Blue</a></h1>
-							<h3>This was made as a dummy website for a nearby upscale restaurant</h3>
-							<h3>Skills: jQuery, Bootstrap for HTML, CSS</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn designs">
-							<h1><a href="http://phsjcl.com">Providence Latin Club</a></h1>
-							<h3>This was made for my school's Latin Club since I was appointed Webmaster</h3>
-							<h3>Skills: jQuery, Bootstrap for HTML, CSS</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn desktop">
-							<h1><a href="https://www.youtube.com/watch?v=1e3-3rNt5rE">Chucky</a></h1>
-							<h3>This was an Artificial Intelligence I made using F# to build a bot that helps you in day-to-day activities</h3>
-							<h3>Skills: F#</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn desktop">
-							<h1><a href="https://github.com/andykamath/MORGAN/releases">MORGAN</a></h1>
-							<h3>Everybody has a starting point. MORGAN was mine. Created at a science fair, this AI chatbot was my introduction to programming and the .NET environment</h3>
-							<h3>Skills: Console C#</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn web">
-							<h1><a href="http://albertengine.herokuapp.com">Albert</a></h1>
-							<h3>This is an instant-answer search bot and my first PHP app</h3>
-							<h3>Skills: PHP, Nginx, Heroku, Bootstrap for HTML</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn web">
-							<h1><a href="http://fortana.github.io">Fortana</a></h1>
-							<h3>Siri utilized through SMS</h3>
-							<h3>Skills: PHP, Twilio API, Wordnik API, Wolfram Alpha API, ESPN API, Weather-Underground API</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn web">
-							<h1><a href="http://engrouped.com">Engrouped</a></h1>
-							<h3>Real-time chat that deletes after you close the tab</h3>
-							<h3>Skills: Node.js, Websockets/Socket.IO, Gravatar/Wordpress API</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn web">
-							<h1><a href="https://www.youtube.com/watch?v=NPz3YBuxnjY">Make a Team</a></h1>
-							<h3>An easy team-collaboration platform</h3>
-							<h3>Skills: Laravel 4, Metro-Bootstrap for HTML, Apache, MySQL, and jQuery</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn web">
-							<h1>Healer (currently under construction)</h1>
-							<h3>A communication tool between patient and doctor being built for CMC</h3>
-							<h3>Skills: Cordova cross-platform app development with HTML, CSS, and Javascript, with Facebook's Parse API</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn phone">
-							<h1><a href="https://www.youtube.com/watch?v=PHtydsbRTUM">I <i class="fa fa-heart animated pulse infinite" style="color:red"></i> You Mommy</a></h1>
-							<h3>SMS Auto-Responder for your Mother on Windows Phone</h3>
-							<h3>Skills: C#, XAML, Windows Phone technology</h3>
-						</div>
-						<div class="col-md-6 animated fadeIn phone">
-							<h1><a href="https://www.youtube.com/watch?v=qrcE1hTm2Gg">MotivateMe</a></h1>
-							<h3>Inspirational Quote Generator on Windows Phone</h3>
-							<h3>Skills: C#, XAML, JSON.NET, Windows Phone technology</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="contactme" id="contact" style="width:100%" align="center">
-				<div class="container">
-					<h1>Contact me!</h1>
-					<p class="wow zoomIn">Email: andy@hackgician.net</p>
-					<h2 class="wow zoomIn"><a href="//github.com/andykamath"><i class="fa fa-github"></i></a>
-					<a href="//youtube.com/MrCandonce"><i class="fa fa-youtube"></i></a>
-					<a href="//medium.com/@andykamath"><i class="fa fa-pencil"></i></a>
-					<a href="//instagram.com/baendy"><i class="fa fa-instagram"></i></a>
-					<a href="//twitter.com/baesedandy"><i class="fa fa-twitter"></i></a></h2>
-				</div>
-			</div>
-		</div>
-		<script type="text/javascript">
-			$("#loader").show();
-			$("#wholething").hide();
-			$(window).load(function() {
-	    		$("#loader").hide();
-	    		$("#wholething").show();
-			});
-			$(function() {
-  				$('a[href*=#]:not([href=#])').click(function() {
-    				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      					var target = $(this.hash);
-      					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      					if (target.length) {
-        					$('html,body').animate({
-          						scrollTop: target.offset().top
-        					}, 1000);
-        					return false;
-      					}
-    				}
-  				});
-			});
-			var text = ['I\'m a sophomore', 'I\'m a full-stack web developer', 'I\'m an Entrepreneur', 'I\'m a .NET developer', 'I\'m a musician', 'I\'m a mathematician', 'I\'m a scientist', 'I\'m pentalingual'];
-    		i = 0,
+      <div id="web" class="jumbotron sub">
+        <div class="container">
+          <ul class="stuff">
+            <li class="stuff main">Web Apps</li>
+            <li class="stuff">&middot;</li>
+            <li class="stuff"><a class="webshow navigation ab">Albert</a></li>
+            <li class="stuff">&middot;</li>
+            <li class="stuff"><a class="webshow navigation f">Fortana</a></li>
+            <li class="stuff">&middot;</li>
+            <li class="stuff"><a class="webshow navigation e">Engrouped</a></li>
+            <li class="stuff">&middot;</li>
+            <li class="stuff"><a class="webshow navigation h">Healer</a></li>
+          </ul>
+          <div class="desc albert a wow fadeIn">
+            <h1>Albert</h1>
+            <p><strong><a href="http://albertengine.herokuapp.com" style="color:#FFF">This</a></strong> is a site that's like an instant-answer for Google so you don't waste time going through search results</p>
+            <p>Made with PHP, HTML5, and Nginx</p>
+            <p>Link: <a href="http://albertengine.herokuapp.com">here</a></p>
+          </div>
+          <div class="desc fortana a wow fadeIn">
+            <h1>Fortana</h1>
+            <p>This is a Siri that doesn't require internet. Just text a query to 704-350-2797 to get a response with the information you need!</p>
+            <p>Made with PHP and the Twilio, Wordnik, ESPN, Weather Underground, and Wolfram-Alpha APIs</p>
+            <p>Link: <a href="http://fortana.github.io">here</a></p>
+          </div>
+          <div class="desc engrouped a wow fadeIn">
+            <h1>Engrouped</h1>
+            <p>Real-time chat that deletes after you close the tab</p>
+            <p>Made with Node.js, Gravatar/Wordpress API, Websockets/Socket.IO, HTML5, and CSS3</p>
+            <p>Link: <a href="http://engrouped.com">here</a></p>
+          </div>
+          <div class="desc healer wow a fadeIn">
+            <h1>Healer</h1>
+            <p>This is an app currently being made for CMC that in essence would help get to your appointment faster.</p>
+            <p>Being made with HTML5, Cordova cross-platform apps for iOS, Android, and Windows Phone, and Parse API</p>
+            <p>Link: None yet, it's under construction. Sorry!</p>
+          </div>
+        </div>
+      </div>
 
-			setInterval(function ()
-			{
-    			$("#about").text(text[i++ % text.length]);
-			}, 1000);
-
-			$("#designs").click(function()
-			{
-				$(".designs").show();
-				$(".desktop").hide();
-				$(".web").hide();
-				$(".phone").hide();
-			});
-			$("#web").click(function()
-			{
-				$(".designs").hide();
-				$(".desktop").hide();
-				$(".web").show();
-				$(".phone").hide();
-			});
-			$("#desktop").click(function()
-			{
-				$(".designs").hide();
-				$(".desktop").show();
-				$(".web").hide();
-				$(".phone").hide();
-			});
-			$("#phone").click(function()
-			{
-				$(".designs").hide();
-				$(".desktop").hide();
-				$(".web").hide();
-				$(".phone").show();
-			});
-		</script>
-	</body>
+      <script type="text/javascript">
+        $(".fortana").hide();
+        $(".engrouped").hide();
+        $(".make").hide();
+        $(".healer").hide();
+        $(".ab").click(function(){
+          $(".a").hide();
+          $(".albert").show();
+        })
+        $(".f").click(function(){
+          $(".a").hide();
+          $(".fortana").show();
+        })
+        $(".e").click(function(){
+          $(".a").hide();
+          $(".engrouped").show();
+        })
+        $(".m").click(function(){
+          $(".a").hide();
+          $(".make").show();
+        })
+        $(".h").click(function(){
+          $(".a").hide();
+          $(".healer").show();
+        })
+        $("#wrapper").toggleClass("toggled");
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          this.classList.toggle( "active" );
+        });
+        $(".navigation").click(function(){
+          $(".navigation").removeClass('currentlyActive');
+          $(this).addClass('currentlyActive');
+        });
+        $(".phsjcl").hide();
+        $(".p").click(function()
+        {
+          $(".blue").hide();
+          $(".phsjcl").show();
+        });
+        $(".b").click(function()
+        {
+          $(".blue").show();
+          $(".phsjcl").hide();
+        });
+    </script>
+  </body>
 </html>
