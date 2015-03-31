@@ -32,7 +32,6 @@ a
 .jumbotron
 {
   background: #00261C;
-  height: 100%;
   color: #FFF;
   position:relative;
   margin-bottom: 0;
@@ -44,9 +43,19 @@ a
 	color: #FFF
 }
 
+.main
+{
+  height: 100%;
+}
+
+.about
+{
+  height: 750px
+}
+
 .sub
 {
-  height: 500px;
+  height: 500px
 }
 
 #designs
