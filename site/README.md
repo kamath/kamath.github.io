@@ -1,2 +1,0 @@
-andykamath.github.io
-====================

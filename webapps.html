@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Andy Kamath &middot; Web Applications</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/WOW.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    <script type="text/javascript" src="js/jQuery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="job">
+    <div id="wrapper" style="background:#FFF">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" style="background:#FFF">
+        <ul class="sidebar-nav-job" style="color:#000">
+          <li><img src="img/me.jpg" class="img img-circle" height="70" style="left:50" style="color:#000"></li>
+          <li class="sidebar-brand">
+            <a href="index.html" style="color:#000">
+              Andy Kamath
+            </a>
+          </li>
+          <li>
+            <a href="designs.html"><i class="fa fa-eye"></i> Web Designs</a>
+          </li>
+          <li>
+            <a href="desktop.html"><i class="fa fa-laptop"></i> Desktop Apps</a>
+          </li>
+          <li>
+            <a href="webapps.html"><i class="fa fa-code"></i> Web Apps</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebarc"><div class="toggle"><h1><a id="menu-toggle" href="#" style="position:fixed;margin-top:5px;z-index:100;color:#000"><span class="fa fa-bars"></span></a></h1></div></div>
+    <div class="jumbotron jumbotron-job" align="center">
+      <div class="container">
+        <h1>Web Apps</h1>
+        <hr class="divider wow zoomIn">
+        <div class="row">
+          <div class="col-md-6 wow fadeInUp fadeInRight" data-wow-delay="0ms">
+            <h2>Fortana</h2>
+            <hr class="divider">
+            <p>I utilized PHP with the Twilio API to create a Siri that operates through SMS as opposed to data. <a href="http://fortana.github.io" style="color:#FF0000">Check it out</a></p>
+          </div>
+          <div class="col-md-6 wow fadeInUp fadeInRight" data-wow-delay="250ms">
+            <h2>Engrouped</h2>
+            <hr class="divider">
+            <p>Used Node.js and Socket.IO to create a site that is pretty much Snapchat chatting on the web - it deletes after a refresh of the page. <a href="http://engrouped.com" style="color:#F00">Check it out</a></p>
+          </div>
+          <div class="col-md-6 wow fadeInUp fadeInRight" data-wow-delay="500ms">
+            <h2>Albert</h2>
+            <hr class="divider">
+            <p>I used PHP and MySQL on Heroku to make an instant-answer service. <a href="http://albertengine.herokuapp.com" style="color:#F00">Check it out</a></p>
+          </div>
+          <div class="col-md-6 wow fadeInUp fadeInRight" data-wow-delay="750ms">
+            <h2>"Educational"</h2>
+            <hr class="divider">
+            <p>Found a simple way for middle schoolers at a nearby school to bypass their school's wi-fi block on <a href="http://miniclip.com">MiniClip</a> through using PHP for form-handling and then Javascript to load the iframe in order to play the games. I named it "Educational" so the school wouldn't get suspicious of the title. <a href="http://educational.herokuapp.com" style="color:#F00">Check it out</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $("#wrapper").toggleClass("toggled");
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          this.classList.toggle( "active" );
+        });
+        $(".navigation").click(function(){
+          $(".navigation").removeClass('currentlyActive');
+          $(this).addClass('currentlyActive');
+        });
+    </script>
+  </body>
+</html>

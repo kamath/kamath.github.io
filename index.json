@@ -1,0 +1,31 @@
+[{
+	"name":"Andy Kamath",
+	"aboutme":"I'm a creative full-stack web developer as well as C# developer. I like to make websites and code for people. I am also a sophomore and Honors/AP student pursuing a career in Computer Science",
+	"projects":[{
+		"name": "Advicify",
+		"GitHub link": "http://github.com/hackgician/advicify",
+		"skills utilized": "Bootstrap framework for HTML, Laravel framework for PHP, Nginx server, MySQL Database, jQuery.js, HTML5, CSS, and Javascript",
+		"description": "This website was made as a forum for sad people who just need to talk about stuff and want other people to listen",
+	},
+	{
+		"name": "Albert Engine",
+		"website link": "http://albert.cf",
+		"skills utilized": "PHP, Heroku, Bootstrap framework for HTML, jQuery.js, HTML5, CSS, and Javascript",
+		"description": "Instant-answer search-engine",
+	},
+	{
+		"name": "Bae Button",
+		"website link": "http://andykamath.com/bae",
+		"skills utilized": "Bootstrap framework for HTML, jQuery.js, HTML5, CSS, and Javascript",
+		"description": "Bae button. Nuff said",
+	},
+	{
+		"name": "Blue",
+		"website link": "http://andykamath.com/BlueWebsite",
+		"skills utilized": "Bootstrap framework for HTML, jQuery.js, HTML5, CSS, and Javascript",
+		"description": "Website template for potential customers"
+	},
+	{
+		"name"
+	}]
+}]

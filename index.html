@@ -1,23 +1,59 @@
----
-layout: default
----
+<html>
+  <head>
+    <title>Andy Kamath</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/WOW.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    <script type="text/javascript" src="js/jQuery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+  <body class="home">
+        <div id="wrapper" style="background:#000">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" style="background:#000">
+        <ul class="sidebar-nav" style="color:#FFF">
+          <li><img src="img/me.jpg" class="img img-circle" height="70" style="left:50" style="color:#000"></li>
+          <li class="sidebar-brand">
+            <a href="index.html" style="color:#FFF">
+              Andy Kamath
+            </a>
+          </li>
+          <li>
+            <a href="designs.html"><i class="fa fa-eye"></i>  Web Designs</a>
+          </li>
+          <li>
+            <a href="desktop.html"><i class="fa fa-laptop"></i> Desktop Apps</a>
+          </li>
+          <li>
+            <a href="webapps.html"><i class="fa fa-code"></i> Web Applications</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fa fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact Me</a>
+          </li>   
+        </ul>
+      </div>
+      <div class="jumbotron main" align="center">
+        <div class="container">
+          <h1>I'm Andy Kamath</h1>
+          <hr class="divider wow zoomIn">
+        </div>
+      </div>
+    <script type="text/javascript">
+      $("#wrapper").toggleClass("toggled");
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          this.classList.toggle( "active" );
+        });
+        $(".navigation").click(function(){
+          $(".navigation").removeClass(&#39;currentlyActive&#39;);
+          $(this).addClass(&#39;currentlyActive&#39;);
+        });
+    </script>
+  </body>
+</html>
