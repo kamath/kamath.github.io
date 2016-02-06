@@ -11,7 +11,7 @@ email: your-email@domain.com
 description: Computer Scientist
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-img: "https://scontent-atl3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12391410_432159773656269_5190042455339779781_n.jpg?oh=f01e802acbb5e6c808bdbcd3b1bb5120&oe=572E307A"
+img: "https://avatars3.githubusercontent.com/u/7597423?v=3&s=460"
 twitter_username: jekyllrb
 github_username:  jekyll
 
