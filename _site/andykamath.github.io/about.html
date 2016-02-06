@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Andy Kamath &middot; About Me</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/WOW.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+    <script type="text/javascript" src="js/jQuery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="job">
+    <div id="wrapper" style="background:#FFF">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" style="background:#FFF">
+        <ul class="sidebar-nav-job" style="color:#000">
+          <li><img src="img/me.jpg" class="img img-circle" height="70" style="left:50" style="color:#000"></li>
+          <li class="sidebar-brand">
+            <a href="index.html" style="color:#000">
+              Andy Kamath
+            </a>
+          </li>
+          <li>
+            <a href="designs.html"><i class="fa fa-eye"></i> Web Designs</a>
+          </li>
+          <li>
+            <a href="desktop.html"><i class="fa fa-laptop"></i> Desktop Apps</a>
+          </li>
+          <li>
+            <a href="webapps.html"><i class="fa fa-code"></i> Web Apps</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/14XF0M6H3qp08F2HxMIQQ9k5KEI-3BFFUBTJujT8nrOs/edit?usp=sharing"><i class="fa fa-paperclip"></i> My Resume</a>
+          </li>
+          <li class="active">
+            <a href="about.html"><i class="fa fa-user"></i> About Me</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fa fa-envelope"></i> Contact Me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebarc"><div class="toggle"><h1><a id="menu-toggle" href="#" style="position:fixed;margin-top:5px;z-index:100;color:#000"><span class="fa fa-bars"></span></a></h1></div></div>
+    <div class="jumbotron jumbotron-job" align="center">
+      <div class="container">
+        <h1>About Me</h1>
+        <hr class="divider wow zoomIn">
+        <div class="row">
+          <div class="col-md-6 wow fadeInUp fadeInRight" data-wow-delay="0ms">
+            <h2>Non-STEM</h2>
+            <hr class="divider">
+            <p>I'm a junior in High School that consistently scores in the >97th percentile on every standardized test I take. I'm based in Charlotte, North Carolina and love anything that involves thinking analytically. I have a passion for ancient linguistics as well - I have studied and attained proficiency in Classical Latin and Attic Greek (I am the Vice President for the state of North Carolina's Junior Classical League). I also study Sanskrit and just overall love the feel of learning a language through which I can understand the thoughts of the greatest literary minds this world has known. </p>
+          </div>
+          <div class="col-md-6 wow fadeInUp fadeInRight" data-wow-delay="250ms">
+            <h2>STEM</h2>
+            <hr class="divider">
+            <p>I code mainly front-end and back-end web applications and websites, which extends into mobile application development through Cordova/Phonegap. In the past I have used PHP frameworks or a MEAN stack the majority of the time, but I am also fluent with Python-integrated environments for desktop as well as web applications using Flask. For desktop applications, I have used and am pretty decent with languages that the .NET framework encompasses (C#, F#, and VB.NET).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $("#wrapper").toggleClass("toggled");
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+          this.classList.toggle( "active" );
+        });
+        $(".navigation").click(function(){
+          $(".navigation").removeClass('currentlyActive');
+          $(this).addClass('currentlyActive');
+        });
+    </script>
+  </body>
+</html>

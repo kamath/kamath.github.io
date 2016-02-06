@@ -1,0 +1,83 @@
+@import url(animate.css);
+@import url(bootstrap.css);
+@import url(font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Muli);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(metro-bootstrap.min.css);
+@import url(sidebar.css);
+
+.sidebarc
+{
+	padding-left: 30px
+}
+
+.fa-facebook:hover
+{
+	color: #F00
+}
+
+.fa-twitter:hover
+{
+	color: #F00
+}
+
+.fa-linkedin:hover
+{
+	color: #F00
+}
+
+.fa-instagram:hover
+{
+	color: #F00
+}
+
+.fa-youtube:hover
+{
+	color: #F00
+}
+
+.fa-github:hover
+{
+	color: #F00
+}
+
+.main
+{
+	height: 100%;
+	padding-top: 25%;
+	background-color: #000;
+	color: #FFF
+}
+
+.jumbotron-job
+{
+	background-color: #FFF;
+}
+
+.jumbotron-bank
+{
+	background: url();
+}
+
+.bullet
+{
+	font-size: 24px
+}
+
+.job
+{
+	background-color: #FFF
+}
+
+hr
+{
+	border: 1px solid #FF0000;
+  	width: 300px
+}
+
+.home
+{
+	background-color: #000;
+	overflow: hidden;
+}
