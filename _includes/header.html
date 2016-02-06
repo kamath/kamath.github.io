@@ -9,9 +9,11 @@
             </a>
           </li>
           {%for p in site.pages%}
+          {% if p.icon %}
           <li>
             <a href="{{p.url}}"><i class="fa fa-{{p.icon}}"></i> {{p.title}}</a>
           </li>
+          {%endif%}
           {%endfor%}
         </ul>
       </div>
