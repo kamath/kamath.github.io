@@ -1,11 +1,18 @@
 @import url(animate.css);
 @import url(bootstrap.css);
 @import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Muli);
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(metro-bootstrap.min.css);
 @import url(sidebar.css);
+
+html,body
+{
+	height: 100%;
+	width: 100%
+}
 
 .sidebarc
 {
@@ -42,12 +49,10 @@
 	color: #F00
 }
 
-.main
+#main
 {
-	height: 100%;
-	padding-top: 25%;
-	background-color: #000;
-	color: #FFF
+	background: #9BDDFF;
+	padding: 0;
 }
 
 .jumbotron-job
@@ -80,4 +85,48 @@ hr
 {
 	background-color: #000;
 	overflow: hidden;
+}
+
+.jumbotron
+{
+	margin: 0
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+*
+{
+	color:#000;
+}
+
+.square,.square3,.square6
+{
+	padding: 0;
+	padding-top:0;
+}
+
+.hover
+{
+	position: absolute;
+	background: rgba(255,255,255,0.5);
+	height:100%;
+	width: 100%;
+	bottom:0;
+}
+
+.bottom {
+   bottom: 0;
+   right: 0;
+}
+
+.grad {
+  background: #1D6660; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, #1D6660, red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, #1D6660, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, #1D6660, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, #1D6660, red); /* Standard syntax */
 }

@@ -1,7 +1,18 @@
 ---
 layout: default
 ---
-<div class="jumbotron jumbotron-job" align="center">
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="job">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="jumbotron jumbotron-job" align="center">
       <div class="container">
         <h1>{{ page.title }}</h1>
         <hr class="divider wow zoomIn">
@@ -22,3 +33,11 @@ layout: default
           $(this).addClass('currentlyActive');
         });
     </script>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

@@ -4,14 +4,14 @@
         <ul class="sidebar-nav-job" style="color:#000">
           <li><img src="{{site.img}}" class="img img-circle" height="70" style="left:50" style="color:#000"></li>
           <li class="sidebar-brand">
-            <a href="index.html" style="color:#000">
+            <a href="/index.html" style="color:#000">
               Andy Kamath
             </a>
           </li>
-          {%for p in site.pages%}
+          {%for p in site.posts%}
           {% if p.icon %}
           <li>
-            <a href="{{p.url}}"><i class="fa fa-{{p.icon}}"></i> {{p.title}}</a>
+            <a href="{{p.url}}"><i class="fa fa-{{p.pic}}"></i> {{p.title}}</a>
           </li>
           {%endif%}
           {%endfor%}

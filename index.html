@@ -1,111 +1,209 @@
 ---
-layout: home
+layout: default
 ---
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>{{site.title}}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <script type="text/javascript" src="js/jQuery.min.js"></script>
-    <script type="text/javascript" src="js/WOW.js"></script>
-    <script type="text/javascript">new WOW().init();</script>
-  </head>
-  <body class="is-loading">
+<style type="text/css">h3{color: #000}</style>
+<div id="wavybg-wrapper" class="jumbotron" style="height: 75%;position:relative;padding:0 0 0 0;" align="center"> 
+    <canvas>Your browser doesn't support canvas</canvas>
+    <div style="position:absolute;top:0;height:100%;width:100%;background:rgba(255,255,255,0.5);padding-left: 20%;padding-right:20%"><div id="square" style="background:rgba(73,73,73,0.5);height:50%;border-radius:50%;padding:0" class="container element"><h1 style="color:#FFF;top:0" id="h1">AK</h1></div></div>
+</div>
+<div id="about" class="jumbotron" style="background: transparent">
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="col-md-9">
+                <h2>Hi I'm Andy Kamath, and I like doing stuff with computers. I have experience making projects with a MEAN stack, Python/Flask, PHP, and C#, among others.<br><br>Welcome to my world.</h2>
+            </div>
+            <div class="col-md-3" style="background:url(https://avatars3.githubusercontent.com/u/7597423?v=3&s=460);background-size:cover;background-align:center;"></div>
+        </div>
+    </div>
+</div>
 
-    <!-- Wrapper -->
-      <div id="wrapper">
-
-        <!-- Main -->
-          <section id="main">
-            <header>
-              <span class="avatar"><img src="{{site.img}}" alt="" height="200" width="200"/></span>
-              <h1>{{ site.title }}</h1>
-              <p>{{site.description}}</p>
-            </header>
-            <!--
-            <hr />
-            <h2>Extra Stuff!</h2>
-            <form method="post" action="#">
-              <div class="field">
-                <input type="text" name="name" id="name" placeholder="Name" />
-              </div>
-              <div class="field">
-                <input type="email" name="email" id="email" placeholder="Email" />
-              </div>
-              <div class="field">
-                <div class="select-wrapper">
-                  <select name="department" id="department">
-                    <option value="">Department</option>
-                    <option value="sales">Sales</option>
-                    <option value="tech">Tech Support</option>
-                    <option value="null">/dev/null</option>
-                  </select>
+<div id="shitivedone" class="jumbotron grad" style="background: #222;color:#FFF;padding-top:50px;padding-bottom:50px">
+    <div class="container" style="padding-top:0">
+        <h1 style="color:#FFF">People/Places I've Worked</h1>
+        <br>
+        <div class="row" style="width:100%" align="center">
+            <a href="http://github.com/andykamath/happy-camper" style="color:#000">
+            <div class="col-md-4 square" style="background:url(http://ecx.images-amazon.com/images/I/81jVuqKe08L._SL1500_.jpg);background-size:cover;background-position:center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>Hoodie Allen</h2>
+                        <h3>Assisted in setting up a CDN to host his latest album, Happy Camper</h3>
+                    </div>
                 </div>
-              </div>
-              <div class="field">
-                <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-              </div>
-              <div class="field">
-                <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-              </div>
-              <div class="field">
-                <label>But are you a robot?</label>
-                <input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-                <input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-              </div>
-              <ul class="actions">
-                <li><a href="#" class="button">Get Started</a></li>
-              </ul>
-            </form>
-            <hr />
-            -->
-            <footer>
-              <ul class="icons">
-                {%for p in site.pages %}
-                {% if p.icon %}
-                  <li>
-                    <a href="{{p.url}}"class="fa wow fadeInUp fa-{{p.icon}}"  title="{{p.title}}" data-wow-delay="750ms"> {{p.title}}</a>
-                  </li>
-                {% endif %}
-                {% endfor %}
-              </ul>
-              <h1 style="color: #000;position:fixed" class="wow fadeIn" id="title"></h1>
-            </footer>
-          </section>
+            </div>
+            </a>
+            <a href="http://imaginebernie.com" style="color:#000">
+            <div class="col-md-4 square" style="background:url(https://scontent-atl3-1.xx.fbcdn.net/hphotos-xap1/t31.0-8/1933199_1532582960371028_1663179405548114984_o.png);background-size:cover;background-position:center center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>ImagineBernie</h2>
+                        <h3>Web Developer and Research Officer</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="http://educommit.org" style="color:#000">
+            <div class="col-md-4 square" style="background:url(https://scontent-atl3-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11692525_862733613806346_8054226891465219636_n.png?oh=caa675961df60fda97a707a548baefb9&oe=57984E99);background-size:cover;background-position:center center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>eduCommit</h2>
+                        <h3>Founder and CEO</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
 
-        <!-- Footer -->
-          <footer id="footer">
-            <ul class="copyright">
-              <li>&copy; Jane Doe</li>
-              <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-          </footer>
+<div id="sideprojects" class="jumbotron" style="background:transparent">
+    <div class="container">
+        <h1>Side Projects</h1>
+        {%for post in site.posts%}
+            <a href="{{post.url}}" style="color:#000">
+            <div class="col-md-4 square" style="background:url({{post.icon}});background-size:cover;background-position:center center" align="center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>{{post.title}}</h2>
+                    </div>
+                </div>
+            </div>
+            </a>
+        {%endfor%}
+    </div>
+</div>
 
+<div id="news" class="jumbotron" style="background:#222">
+    <div class="container">
+        <h1 style="color:#FFF">As Seen On...</h1>
+        <br>
+        <div class="row" style="width:100%" align="center">
+            <a href="http://www.businessinsider.com/bernie-campaigners-on-tinder-facebook-twitter-2016-2" style="color:#000">
+            <div class="col-md-6 square6" style="background:url(https://lh6.ggpht.com/0AKsuvs40XtFLWQCG9JzWKbUYDWrRSLQM5P0VfUfjTfQaf-3oq4J5RId1fCeHqG5jQ=w300);background-size:cover;background-position:center center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>BusinessInsider</h2>
+                        <h3>For the ImagineBernie website I made</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="http://www.techinsider.io/bernie-campaigners-on-tinder-facebook-twitter-2016-2" style="color:#000">
+            <div class="col-md-6 square6" style="background:url(http://static2.uk.businessinsider.com/image/55f1e480dd0895b1788b4588/tech-insider.jpg);background-size:cover;background-position:center center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>TechInsider</h2>
+                        <h3>For the ImagineBernie website I made</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="http://www.wral.com/nccu-cancels-long-running-high-school-program-third-university-in-nc-to-drop-out/15163739/" style="color:#000">
+                <div class="col-md-4 square" style="background:url(https://pbs.twimg.com/profile_images/704260995154206720/krcQZGdB.jpg);background-size:cover;background-position:center center">
+                    <div class="hover animated">
+                        <div class="element">
+                            <h2>WRAL News</h2>
+                            <h3>Was on TV for my work with eduCommit</h3>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/groups/hackathonhackers/permalink/1183597951695688/" style="color:#000">
+            <div class="col-md-4 square" style="background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/2000px-Facebook_logo_36x36.svg.png);background-size:cover;background-position:center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>Facebook</h2>
+                        <h3>Received a shoutout from Hoodie Allen for assisting him</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+            <a href="http://imaginebernie.com" style="color:#000">
+            <div class="col-md-4 square" style="background:url(http://www.kionrightnow.com/image/view/-/26558248/medRes/1/-/h/180/maxh/180/maxw/320/w/320/-/ylcx3i/-/kion-default-640A-jpg.jpg);background-size:cover;background-position:center center">
+                <div class="hover animated">
+                    <div class="element">
+                        <h2>Channel 5 Kion</h2>
+                        <h3>Web Developer and Research Officer</h3>
+                    </div>
+                </div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-job" align="center">
+      <div class="container">
+        <h1>Shoot me an email!</h1>
+        <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+<input type="text" placeholder="Your Name *" name="entry.590052548" value="" class="ss-q-short" id="entry_590052548" dir="auto" aria-label="Name  " aria-required="true" required="" title="" style="width:50%"><br><br>
+<textarea name="entry.350270304" rows="8" cols="0" class="ss-q-long" id="entry_350270304" dir="auto" aria-label="How may I help you?  " placeholder="How may I help you?  " aria-required="true" required="" style="width:50%"></textarea><br>
+<input type="hidden" name="draftResponse" value="[,,&quot;-358895960907417255&quot;]
+">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fbzx" value="-358895960907417255">
+<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
+</form>
+        <h1><a href="http://fb.com/hackgician"><i class="fa fa-facebook wow fadeInUp" data-wow-delay="500ms"></i></a> <a href="http://twitter.andykamath.com"><i class="fa fa-twitter wow fadeInUp" data-wow-delay="250ms"></i></a> <a href="http://linkedin.andykamath.com"><i class="fa fa-linkedin wow fadeInUp"></i></a> <a href="http://github.com/andykamath"><i class="fa fa-github wow fadeInUp"></i></a> <a href="http://youtube.com/MrCandonce"><i class="fa fa-youtube wow fadeInUp" data-wow-delay="250ms"></i></a> <a href="http://instagram.com/andykamath"><i class="fa fa-instagram wow fadeInUp" data-wow-delay="500ms"></i></a></h1>
       </div>
+    </div>
 
-    <!-- Scripts -->
-      <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-      <script>
-        if ('addEventListener' in window) {
-          window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-          document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-        }
-        $("a").hover(function(){
-          $("#title").text($(this).attr('title'))
-          $("#title").removeClass('fadeOut')
-          $("#title").addClass('fadeIn')
-        });
-        $("a").mouseout(function(){
-          $("#title").addClass('fadeOut')
-        })
-      </script>
-
-  </body>
-</html>
+<script type="text/javascript">
+    var smokyBG = $('#wavybg-wrapper').waterpipe({
+    //Default values
+    gradientStart: '#000000',
+    gradientEnd: '#222222',
+    smokeOpacity: 0.1,
+    numCircles: 1,
+    maxMaxRad: 'auto',
+    minMaxRad: 'auto',
+    minRadFactor: 0,
+    iterations: 8,
+    drawsPerFrame: 10,
+    lineWidth: 2,
+    speed: 1,
+    bgColorInner: "#ffffff",
+    bgColorOuter: "#666666"
+});
+    $(document).ready(function(){
+        var height = $("#square").height();
+        $('#square').css('height', height);
+        $('#square').css('width', height);
+        $("#h1").css('font-size', (.7*parseInt(height)).toString()+"px")
+        $(".side").css('font-size', (.7*parseInt($(this).parent().height())).toString()+"px")
+        var height = $(".col-md-9").height();
+        $('.col-md-3').css('height', height);
+        var height = $(".square").width();
+        $('.square').css('height', height);
+        $('.square').css('width', height);
+        var height = $(".square").width();
+        $('.square').css('height', height);
+        $('.square').css('width', height);
+        var height = $(".square6").width();
+        $('.square6').css('height', height);
+        $('.square6').css('width', height);
+    });
+    $(".square").children().hide();
+    $(".square").hover(function(){
+        $(this).children().fadeIn(250)
+        $(this).css('background-size', '200%')
+        $(this).css('background-position', 'center center')
+    }, function()
+    {
+        $(this).children().fadeOut()
+        $(this).css('background-size', 'cover')
+        $(this).css('background-position', 'center center')
+    })
+    $(".square6").children().hide();
+    $(".square6").hover(function(){
+        $(this).children().fadeIn(250)
+        $(this).css('background-size', '200%')
+        $(this).css('background-position', 'center center')
+    }, function()
+    {
+        $(this).children().fadeOut()
+        $(this).css('background-size', 'cover')
+        $(this).css('background-position', 'center center')
+    })
+</script>
