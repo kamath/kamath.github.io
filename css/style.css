@@ -130,3 +130,53 @@ hr
   background: -moz-linear-gradient(-90deg, #1D6660, red); /* For Firefox 3.6 to 15 */
   background: linear-gradient(-90deg, #1D6660, red); /* Standard syntax */
 }
+
+body {
+	background: #047;
+	height: 100%;
+}
+
+.main {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#squareloader {
+	background: rgba(73, 73, 73, 0.5);
+	height: 50%;
+	border-radius: 50%;
+	padding: 0;
+	position: relative;
+}
+
+.element {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ktop
+{
+	position:relative;
+	top: 25%;
+	transform: translateY(-25%);
+	-ms-transform: rotate(50deg); /* IE 9 */
+    -webkit-transform: rotate(50deg); /* Safari */
+    transform: rotate(50deg);
+}
+
+.kbottom
+{
+	position:relative;
+	top: 50%;
+	transform: translateY(-25%);
+	-ms-transform: rotate(315deg); /* IE 9 */
+    -webkit-transform: rotate(315deg); /* Safari */
+    transform: rotate(315deg);
+}
+
+.col-md-2
+{
+	box-shadow: 1000px 1000px 1000px #000;
+}
