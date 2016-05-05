@@ -5,7 +5,7 @@ $('#square').css('width', height);
 $("#h1").css('font-size', (.7 * parseInt(height)).toString() + "px")
 $(".side").css('font-size', (.7 * parseInt($(this).parent().height())).toString() + "px")
 var height = $(".col-md-9").height();
-$('.col-md-3').css('height', height);
+$('.swag').css('height', height);
 var height = $(".square").width();
 $('.square').css('height', height);
 $('.square').css('width', height);
