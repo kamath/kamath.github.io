@@ -1,182 +1,46 @@
-@import url(animate.css);
-@import url(bootstrap.css);
 @import url(font-awesome.min.css);
+@import url(animate.css);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Muli);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
-@import url(metro-bootstrap.min.css);
-@import url(sidebar.css);
-
-html,body
-{
-	height: 100%;
-	width: 100%
-}
-
-.sidebarc
-{
-	padding-left: 30px
-}
-
-.fa-facebook:hover
-{
-	color: #F00
-}
-
-.fa-twitter:hover
-{
-	color: #F00
-}
-
-.fa-linkedin:hover
-{
-	color: #F00
-}
-
-.fa-instagram:hover
-{
-	color: #F00
-}
-
-.fa-youtube:hover
-{
-	color: #F00
-}
-
-.fa-github:hover
-{
-	color: #F00
-}
-
-#main
-{
-	background: #9BDDFF;
-	padding: 0;
-}
-
-.jumbotron-job
-{
-	background-color: #FFF;
-}
-
-.jumbotron-bank
-{
-	background: url();
-}
-
-.bullet
-{
-	font-size: 24px
-}
-
-.job
-{
-	background-color: #FFF
-}
-
-hr
-{
-	border: 1px solid #FF0000;
-  	width: 300px
-}
-
-.home
-{
-	background-color: #000;
-	overflow: hidden;
-}
-
-.jumbotron
-{
-	margin: 0
-}
-
-.element {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-*
-{
-	color:#000;
-}
-
-.square,.square3,.square6
-{
-	padding: 0;
-	padding-top:0;
-}
-
-.hover
-{
-	position: absolute;
-	background: rgba(255,255,255,0.5);
-	height:100%;
-	width: 100%;
-	bottom:0;
-}
-
-.bottom {
-   bottom: 0;
-   right: 0;
-}
-
-.grad {
-  background: #1D6660; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, #1D6660, red); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #1D6660, red); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #1D6660, red); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, #1D6660, red); /* Standard syntax */
-}
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html,
 body {
-	background: #047;
-	height: 100%;
+    height: 100%;
+    width: 100%
 }
 
-.main {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-
-#squareloader {
-	background: rgba(73, 73, 73, 0.5);
-	height: 50%;
-	border-radius: 50%;
-	padding: 0;
-	position: relative;
+* {
+    font-family: 'Raleway', 'Open Sans', 'Helvetica', sans-serif;
+    margin: 0
 }
 
 .element {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.ktop
-{
-	position:relative;
-	top: 25%;
-	transform: translateY(-25%);
-	-ms-transform: rotate(50deg); /* IE 9 */
-    -webkit-transform: rotate(50deg); /* Safari */
-    transform: rotate(50deg);
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.kbottom
-{
-	position:relative;
-	top: 50%;
-	transform: translateY(-25%);
-	-ms-transform: rotate(315deg); /* IE 9 */
-    -webkit-transform: rotate(315deg); /* Safari */
-    transform: rotate(315deg);
+.title {
+    font-family: 'Montserrat', 'Open Sans', 'Helvetica', sans-serif;
+
 }
 
-.col-md-2
+.upper {
+    text-transform: uppercase;
+}
+
+.fa
 {
-	box-shadow: 1000px 1000px 1000px #000;
+	color: #FFF
+}
+
+.fa:hover
+{
+	color: #F69992
 }
