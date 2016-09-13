@@ -1,8 +1,6 @@
 @import url(font-awesome.min.css);
 @import url(animate.css);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 html,
 body {
@@ -11,7 +9,7 @@ body {
 }
 
 * {
-    font-family: 'Raleway', 'Open Sans', 'Helvetica', sans-serif;
+    font-family: 'Lato', 'Open Sans', 'Helvetica', sans-serif;
     margin: 0
 }
 
