@@ -325,7 +325,7 @@
     $(".fa-repeat").css('font-size', .75 * $("#img").height())
     $(".device-mockup").attr('data-wow-offset', $(".device-mockup").height() * .75)
     $("#row").css('margin-left', $("#row").width() / 2)
-    $(window).scroll(function() {
+   /* $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         $(".zoom-me img").css({
             width: (100 + scroll / 5) + "%",
@@ -334,7 +334,7 @@
             "-webkit-filter": "blur(" + (scroll / 200) + "px)",
             filter: "blur(" + (scroll / 200) + "px)"
         });
-    });
+    });*/
     $("#hero").css('height', ($(window).height() - $("#nav").height()))
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
