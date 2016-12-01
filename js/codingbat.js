@@ -82,7 +82,7 @@ function handleDone(){
     document.getElementById('results').innerHTML = 'Running code...';
   }
   else if(re.readyState == 4) {  // done
-    console.log(re.responseText);
+    console.log('test')
     document.getElementById('results').innerHTML = re.responseText.replace(new RegExp('class=no', 'g'), 'class=ok')
   }
 }
