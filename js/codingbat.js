@@ -83,7 +83,7 @@ function handleDone(){
   }
   else if(re.readyState == 4) {  // done
     console.log(re.responseText);
-    document.getElementById('results').innerHTML = target.replace(new RegExp(search, 'class=no'), 'class=ok');
+    document.getElementById('results').innerHTML = re.responseText.replace(new RegExp('class=no', 'g'), 'class=ok')
   }
 }
 
