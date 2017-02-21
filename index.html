@@ -53,14 +53,14 @@
             <div class="element">
                 <div class="container" align="center">
                     <h1 class="title wow fadeInUp">ANDY (&amp;y) KAMATH</h1>
-                    <h3>JS Developer/Python Enthusiast</h3>
+                    <h3><h4 class="donly">Data Scientist and Full Stack Engineer &middot; </h4><i class="fa fa-paw" style="-ms-transform: rotate(30deg);-webkit-transform: rotate(30deg);transform: rotate(30deg);"></i> Clemson CS '21</h3>
                 </div>
             </div>
         </div>
     </div>
     <main role="main" style="overflow:hidden;padding:0">
         <div style="background: #1F1F21" id="projects">
-            <div class="contained container" style="color: #FFF;" align="left">
+            <div class="contained container donly" style="color: #FFF;" align="left">
                 <br>
                 <div class="row" id="phoneholder" align="center">
                     <div class="col m3" id="row">
@@ -168,20 +168,20 @@
                     </div>
                     <div class="row">
                         <div class="col s12 m7">
-                            <div class="card" style="background: #58A3E2">
-                                <div class="card-image" style="background: #58A3E2">
-                                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/1933199_1532582960371028_1663179405548114984_o.png?oh=d2ae3fbd5059c21b90a1e126419ba4a6&oe=58EE2180">
-                                    <span class="card-title">ImagineBernie</span>
+                            <div class="card">
+                                <div class="card-image" style="background: #FFF; padding: 10%">
+                                    <img src="http://www.intel.com/content/dam/www/program/education/us/en/images/isef-logo-16x9.jpg.rendition.intel.web.416.234.jpg">
+                                    <span class="card-title" style="color: #000">NCSEF Region 6</span>
                                 </div>
-                                <div class="card-content" align="left" style="background: #58A3E2">
-                                    <p style="color: #FFF">Used <b>social media marketing</b> and a <b>MEAN stack</b> to co-found a grassroots campaign for Bernie Sanders and other left-wing democrat New Deal supporters. We endorsed Misty Snow</p>
+                                <div class="card-content" align="left" style="background: #FFF">
+                                    <p style="color: #000">Developed a prescreening algorithm for Diabetic Retinopathy with 97% sensitivity. Achieved 2nd place in the Technology category. Currently preparing for state fair.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col s12 m5">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11692525_862733613806346_8054226891465219636_n.png?oh=ec42af8393e61fbc45c5fd5aeea5a7ec&oe=58859C99">
+                                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11692525_862733613806346_8054226891465219636_n.png?oh=6753c1d8232aca71531faac6a6d517aa&oe=594B5D99">
                                     <span class="card-title black-text">EduCommit</span>
                                 </div>
                                 <div class="card-content" align="left">
@@ -271,7 +271,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
     <script>
     if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        alert("You are viewing this on a mobile device. Check it out on a desktop or a laptop for optimal viewing pleasure :)")
+        $(".donly").hide()
     }
     $(".square").css('height', $(".square").width())
         /*var ctx = document.getElementById("myChart");
