@@ -1,14 +1,12 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(animate.css);
 @import url(devices.min.css);
-@font-face
-{
+@font-face {
     font-family: 'San Francisco';
     src: url(../font/SFThin.ttf);
 }
 
-@font-face
-{
+@font-face {
     font-family: 'SFBold';
     src: url(../font/SFBold.ttf);
 }
@@ -25,13 +23,24 @@ body {
     margin: 0
 }
 
-b
-{
+b {
     font-family: SFBold
 }
 
-h1
-{
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
     margin: 0
 }
 
@@ -44,6 +53,7 @@ h1
 .container {
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
 }
 
 .title {
@@ -55,120 +65,21 @@ h1
     text-transform: uppercase;
 }
 
-.fa
-{
-	color: #FFF
-}
-
-.fa:hover
-{
-	color: #F69992
-}
-
-header{
-    overflow: hidden;
-    //padding-bottom determines the height of the header
-    padding-bottom: 55%;
-    @media (min-width: 600px){
-        padding-bottom: 50%;
-    }
-    @media (min-width: 700px){
-        padding-bottom: 45%;
-    }
-}
-header img{
-    width: 100%;
-    max-width: none;
-    position: fixed;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-main{
-    padding: 1em 0;
-    position: relative;
-    background: #f5f5f5;
-    box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
-}
-
-.hovertext, .hoverinfo
-{
+.hide {
     display: none;
 }
 
-a {
-  box-sizing: inherit;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
+#main {
+    height: 100%;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.button {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 auto 2em;
-  max-width: 160px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-  width: 100%;
-}
-@media (min-width: 400px) {
-  .button {
-    display: inline-block;
-    margin-right: 2.5em;
-  }
-  .button:nth-of-type(even) {
-    margin-right: 0;
-  }
-}
-@media (min-width: 600px) {
-  .button:nth-of-type(even) {
-    margin-right: 2.5em;
-  }
-  .button:nth-of-type(5) {
-    margin-right: 0;
-  }
-}
-.button:hover {
-  text-decoration: none;
-}
-
-.button-1 {
-  background: #e02c26;
-  font-weight: 100;
-}
-.button-1 svg {
-  height: 45px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.button-1 rect {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2;
-  stroke-dasharray: 422, 0;
-}
-
-.button-1:hover {
-  background: rgba(225, 51, 45, 0);
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-.button-1:hover rect {
-  stroke-width: 5;
-  stroke-dasharray: 15, 310;
-  stroke-dashoffset: 48;
-  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+#mainc {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
 }

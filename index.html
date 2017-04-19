@@ -1,338 +1,53 @@
-
 <html>
 
 <head>
     <title>Andy Kamath · Home</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/20790-200.png">
-    <script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
-    <script type="text/javascript" src="/js/WOW.js"></script>
-    <link rel="stylesheet" type="text/css" href="device-mockups/device-mockups2.min.css">
-    <script type="text/javascript">
-    new WOW().init();
-    </script>
-    <script type="text/javascript" src="/js/jQuery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta property="og:url"                content="http://andykamath.com" />
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Andy Kamath's Website" />
-    <meta property="og:description"        content="Data Scientist. 25% Python, 75% Water." />
-    <meta property="og:image"              content="http://andykamath.com/isef.jpg" />
+    <meta property="og:url" content="http://andykamath.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andy Kamath's Website" />
+    <meta property="og:description" content="Data Scientist. 25% Python, 75% Water." />
+    <meta property="og:image" content="http://andykamath.com/isef.jpg" />
 </head>
 
 <body>
-    <header class="zoom-me">
-        <img id="bgimg">
-        <div class="wow fadeIn" data-wow-duration="1s" style="width: 100%;height: 100%;background: rgba(0,0,0,0.7);position:absolute"></div>
-    </header>
-    <nav id="nav">
-        <div class="nav-wrapper black" style="padding-left: 50px;padding-right: 50px">
-            <a href="#!" class="brand-logo title">&amp;y</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-menu"></i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#workedwith">Organizations</a></li>
-                <li><a href="#news">Press</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view?usp=sharing">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="hero" class="hero" style="height: 100%;background: url(img/bg.jpg);background-size:cover;background-position:center;background-attachment:fixed">
-        <div style="background: rgba(0,0,0,0.5);height: 100%;color: #FFF">
+    <div id="main">
+        <div id="mainc">
             <div class="element">
                 <div class="container" align="center">
-                    <h1 class="title wow fadeInUp">ANDY (&amp;y) KAMATH</h1>    
-                    <h3>I do stuff</h3>
+                    <h1 class="wow fadeInUp" id="intro">Hi <span class="wow fadeInUp" data-wow-delay="1s">I'm</span></h1>
+                    <h1 class="title animated fadeInUp" style="display:none" id="name">Andy Kamath</h1>
+                    <h3 class="animated fadeInUp" style="display:none" id="abt">Full-stack and ML Engineer</h3>
                 </div>
             </div>
         </div>
     </div>
-    <main role="main" style="overflow:hidden;padding:0">
-        <div style="background: #1F1F21" id="projects">
-            <div class="contained container donly" style="color: #FFF;" align="left">
-                <br>
-                <div class="row" id="phoneholder" align="center">
-                    <div class="col m3" id="row">
-                        <div class="device-mockup wow fadeInRight" data-device="iphone6" data-wow-offset="200" data-orientation="portrait" data-color="white">
-                            <div class="device">
-                                <div class="screen" style="background: #FFF">
-                                    <div style="height: 100%">
-                                        <div class="container" style="height: 100%">
-                                            <div class="element">
-                                                <img src="img/gllass.svg" width="100%" class="imgdesc">
-                                                <br>
-                                                <div class="hovertext">
-                                                    <a target="_blank"href="http://gllass.com" show="#glass" class="projectlink" style="color: #007AFF"><h5 style="color: #007AFF">Gllass</h4></a>
-                                                    <p style="color: black">Machine learning to automate social presence.
-                                                        <br>
-                                                        <br><span style="font-family: SFBold">Fall 2016</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col m3">
-                        <div class="device-mockup wow fadeInRight" data-wow-delay="100ms" data-wow-offset="200" data-device="iphone6" data-orientation="portrait" data-color="white">
-                            <div class="device">
-                                <div class="screen" style="background: #FFF">
-                                    <div style="height: 100%">
-                                        <div class="container" style="height: 100%">
-                                            <div class="element">
-                                                <img src="http://linguae.github.io/img/legion.png" id="img" width="100%" class="imgdesc">
-                                                <br>
-                                                <div class="hovertext">
-                                                    <a target="_blank"show="#linguae" href="http://linguae.github.io" class="projectlink" style="color: #007AFF"><h5 style="color: #007AFF">Linguae</h4></a>
-                                                    <p style="color: black">An automatic Latin noun decliner.
-                                                        <br>
-                                                        <br><span style="font-family: SFBold">Fall 2015</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col m3">
-                        <div class="device-mockup wow fadeInRight" data-wow-delay="200ms" data-wow-offset="200" data-device="iphone6" data-orientation="portrait" data-color="white">
-                            <div class="device">
-                                <div class="screen" style="background: #FFF">
-                                    <div style="height: 100%">
-                                        <div class="container" style="height: 100%">
-                                            <div class="element">
-                                                <img src="counteract.png" id="img" width="100%" class="imgdesc">
-                                                <br>
-                                                <div class="hovertext">
-                                                    <a target="_blank"show="counteract" href="http://github.com/jayshenoy/counteract" class="projectlink" style="color: #007AFF"><h5 style="color: #007AFF">Counteract</h4></a>
-                                                    <p style="color: black">AI to detect and aid people at risk of having mental illness.
-                                                        <br>
-                                                        <br><span style="font-family: SFBold">Winter 2016</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div style="color: #000;background: #FFF" id="workedwith">
-                <div class="container" align="center">
-                    <div class="row">
-                        <div class="col s12 m5">
-                            <div class="card" style="background: #12151A">
-                                <div class="card-image" style="background: #12151A">
-                                    <img src="http://s3.amazonaws.com/hiphopdx-production/2016/02/hoodie-allen-happy-camper-620x620.jpg">
-                                    <span class="card-title">Hoodie Allen</span>
-                                </div>
-                                <div class="card-content" align="left" style="background: #12151A">
-                                    <p style="color: #FFF">Utilized <b>CDN optimization and compression algorithms</b> with rapper Hoodie Allen on finding a reliable host for rapid and easy downloads of his latest album, Happy Camper</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m7">
-                            <div class="card" style="background: #5B92E5">
-                                <div class="card-image" style="background: #5B92E5">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_the_United_Nations_(1945-1947).svg/2000px-Flag_of_the_United_Nations_(1945-1947).svg.png">
-                                    <span class="card-title">United Nations CTED</span>
-                                </div>
-                                <div class="card-content" align="left" style="background: #5B92E5">
-                                    <p style="color: #FFF">Utilized SVM classification in Python to detect and aid people on Twitter at risk of harming themselves or others in an effort to stop suicides, homicides, and mass shootings alike by generating an encouraging text through a Markov chain trained on encouraging quotes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m7">
-                            <div class="card">
-                                <div class="card-image" style="background: #FFF; padding: 10%">
-                                    <img src="http://www.intel.com/content/dam/www/program/education/us/en/images/isef-logo-16x9.jpg.rendition.intel.web.416.234.jpg">
-                                    <span class="card-title" style="color: #000">NCSEF</span>
-                                </div>
-                                <div class="card-content" align="left" style="background: #FFF">
-                                    <p style="color: #000">Developed a prescreening algorithm for Diabetic Retinopathy with 97% sensitivity. Achieved 3rd place in the Technology category at the state level, won Intel Excellence in Computer Science, US Army Silver Award, and Social &amp; Scientific Systems, Inc. Founders’ Award for Excellence in Public Health.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m5">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/11692525_862733613806346_8054226891465219636_n.png?oh=6753c1d8232aca71531faac6a6d517aa&oe=594B5D99">
-                                    <span class="card-title black-text">EduCommit</span>
-                                </div>
-                                <div class="card-content" align="left">
-                                    <p>Worked on a prototype of a nonprofit that helps children around the world get an education through a social network that connects mentors and mentees.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="color: #95a5a6" id="news">
-                    <div class="container" align="center">
-                        <h1 style="color: #000">As seen on...</h1>
-                        <div style="display:inline">
-                            <a target="_blank"href="http://www.businessinsider.com/bernie-campaigners-on-tinder-facebook-twitter-2016-2"><img src="img/businessinsider.jpg" style="max-width: 100%" height="200"></a>
-                            <a target="_blank"href="http://www.huffingtonpost.com/steve-bhaerman/bernie-is-the-future_b_9423828.html"><img src="img/huffpo.jpg" style="max-width: 100%" height="200"></a>
-                            <a target="_blank"href="http://www.wral.com/nccu-cancels-long-running-high-school-program-third-university-in-nc-to-drop-out/15163739/"><img src="img/wral.jpg" style="max-width: 100%" height="200"></a>
-                        </div>
-                    </div>
-                </div>
-                <!--<div class="row">
-                        <div class="col square s12 m4 wow animated fadeIn org" data-wow-offset="200">
-                            <div class="imgdesc2" style="width: 100%;height: 100%;background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_the_United_Nations_(1945-1947).svg/2000px-Flag_of_the_United_Nations_(1945-1947).svg.png');background-size:cover;background-position:center;position:relative"></div>
-                            <div style="height: 100%">
-                                <div class="hoverinfo animated fadeInUp" align="right">
-                                    <a href="#"><h3>United Nations</h3></a>
-                                    <h5>Built an artificial intelligence to detect mental health patients at risk of harming themselves or others. Pitched to Counter Terrorism Committee Executive Directorate twice.</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col square s12 m4 wow animated fadeIn org" data-wow-offset="200" data-wow-delay="100ms">
-                            <div class="imgdesc2" style="width: 100%;height: 100%;background: url(http://s3.amazonaws.com/hiphopdx-production/2016/02/hoodie-allen-happy-camper-620x620.jpg);background-size:cover;background-position:center"></div>
-                            <div style="height: 100%">
-                                <div class="hoverinfo animated fadeInUp">
-                                    <a href="#"><h3>Hoodie Allen</h3></a>
-                                    <h5>Aided in finding the optimal CDN to host the <i>Happy Camper</i> album accounting for huge traffic and demand.</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col square s12 m4 wow animated fadeIn org" data-wow-offset="200" data-wow-delay="200ms">
-                            <div class="imgdesc2" style="width: 100%;height: 100%;background: url(https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13092169_1561341917495132_1195561175139252490_n.png?oh=79a6f11bd5ab5146e30481a90c6ad9f3&oe=5875EFF3); background-size:cover;background-position:center"></div>
-                            <div style="height: 100%">
-                                <div class="hoverinfo animated fadeInUp" align="left">
-                                    <a href="#"><h3>ImagineBernie</h3></a>
-                                    <h5>CTO for a grassroots left-wing campaign. Helped grow to 6,000 likes and 200,000 Facebook post reach.</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-            </div>
+    <nav id="remainderdiv">
+        <div class="nav-wrapper" style="background: #000; padding-left: 50px; padding-right: 50px">
+            <a href="#" class="brand-logo">AK</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">JavaScript</a></li>
+            </ul>
         </div>
-        </div>
-        <div class="jumbotron jumbotron-job" align="center" style="background: #2D2D2D;color: #FFF" id="contact">
-            <div class="container">
-                <h2 class="wow fadeInUp title upper">Get <span class="wow fadeInUp title upper" data-wow-delay="250ms">In</span> <span class="wow fadeInUp title upper" data-wow-delay="500ms">Touch</span></h2>
-                <hr class="wow zoomIn" data-wow-delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
-                <h5>Shoot me an email at <u><a style="color: #FFF" href="mailto:andy@andykamath.com">andy@andykamath.com</a></u> or use the form below!</h5>
-                <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="wow fadeIn" data-wow-delay="500ms">
-                    <ol role="list" class="ss-question-list" style="padding-left: 0">
-                        <input type="email" placeholder="Your Email *" name="entry.590052548" value="" class="ss-q-short" id="entry_590052548" dir="auto" aria-label="Name  " aria-required="true" required="" title="" style="width:50%">
-                        <br>
-                        <br>
-                        <textarea name="entry.350270304" rows="8" cols="0" class="ss-q-long" id="entry_350270304" dir="auto" aria-label="How may I help you?  " placeholder="How may I help you?  " aria-required="true" required="" style="width:50%;border: 0"></textarea>
-                        <br>
-                        <input type="hidden" name="draftResponse" value="[,,&quot;-358895960907417255&quot;]
-">
-                        <input type="hidden" name="pageHistory" value="0">
-                        <input type="hidden" name="fbzx" value="-358895960907417255">
-                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
-                </form>
-                <h1><a target="_blank"href="http://fb.com/hackgician"><i class="fa fa-facebook wow fadeInUp" data-wow-delay="500ms"></i></a> <a target="_blank"href="http://twitter.com/baesedandy"><i class="fa fa-twitter wow fadeInUp" data-wow-delay="250ms"></i></a> <a target="_blank"href="http://andykamath.com/linkedin"><i class="fa fa-linkedin wow fadeInUp"></i></a> <a target="_blank"href="http://github.com/andykamath"><i class="fa fa-github wow fadeInUp"></i></a> <a target="_blank"href="https://www.quora.com/profile/Andy-Kamath"><i class="fa fa-quora wow fadeInUp" data-wow-delay="250ms"></i></a> <a target="_blank"href="http://instagram.com/andykamath"><i class="fa fa-instagram wow fadeInUp" data-wow-delay="500ms"></i></a></h1>
-                <a target="_blank" href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view?usp=sharing" style="color: #FFF"><h5>View my resume <i class="fa fa-angle-right"></i></h5></a>
-                <script>
-                ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                        p = 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + '://platform.twitter.com/widgets.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'twitter-wjs');
-                </script>
-            </div>
-        </div>
-    </main>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
-    <script>
-    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $(".donly").hide()
-    }
-    $(".square").css('height', $(".square").width())
-        /*var ctx = document.getElementById("myChart");
-        var ctx = document.getElementById("myChart").getContext("2d");
-        var ctx = $("#myChart");
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ["People", "Mountains", "Beaches", "Trees"],
-                datasets: [{
-                    label: 'Popularity Index',
-                    data: [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255,99,132,1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)'
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });*/
-    $(".device").hover(function() {
-        $(this).find(".imgdesc").hide()
-        $(this).find(".hovertext").show();
-    }, function() {
-        $(this).find(".imgdesc").show()
-        $(this).find(".hovertext").hide();
-    })
-    $(".org").hover(function() {
-        $(this).find(".imgdesc2").hide()
-        $(this).find(".hoverinfo").show();
-    }, function() {
-        $(this).find(".imgdesc2").show()
-        $(this).find(".hoverinfo").hide();
-    })
-    $(".fa-repeat").css('font-size', .75 * $("#img").height())
-    $(".device-mockup").attr('data-wow-offset', $(".device-mockup").height() * .75)
-    $("#row").css('margin-left', $("#row").width() / 2)
-   /* $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        $(".zoom-me img").css({
-            width: (100 + scroll / 5) + "%",
-            top: -(scroll / 10) + "%",
-            //Blur suggestion from @janwagner: http://codepen.io/janwagner/ in comments
-            "-webkit-filter": "blur(" + (scroll / 200) + "px)",
-            filter: "blur(" + (scroll / 200) + "px)"
-        });
-    });*/
-    $("#hero").css('height', ($(window).height() - $("#nav").height()))
+    </nav>
+    <script type="text/javascript" src="/js/WOW.js"></script>
+    <script type="text/javascript">
+    new WOW().init();
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type="text/javascript">
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -350,10 +65,23 @@
         });
     });
     $(".button-collapse").sideNav();
-    /*new Vivus('logo', {
-        duration: 75,
-        file: '/img/logo.svg'
-    }, console.log('swag'))*/
+
+    setTimeout(function() {
+            $("#intro").fadeOut(1000, function() {
+                $("#name").show();
+                setTimeout(function() {
+                    $("#abt").show(function() {
+                        $("#main").animate({
+                            height: $(window).height() - $("#remainderdiv").height()
+                        }, 500, function() {
+                            $("#remainderdiv").fadeIn(500);
+                        })
+                    })
+                }, 1000)
+            });
+        }, 1000)
+        /*
+         */
     </script>
 </body>
 
