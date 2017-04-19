@@ -4,6 +4,7 @@
     <title>Andy Kamath · Home</title>
     <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/20790-200.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Compiled and minified JavaScript -->
     <meta charset="utf-8">
@@ -34,14 +35,20 @@
     <nav id="remainderdiv">
         <div class="nav-wrapper" style="background: #000; padding-left: 50px; padding-right: 50px">
             <a href="#" class="brand-logo title">AK</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about" onclick="color(1)">About</a></li>
+                <li><a href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view">Resume</a></li>
+                <li><a href="#contact" onclick="color(2)">Contact</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
                 <li><a href="#about" onclick="color(1)">About</a></li>
                 <li><a href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view">Resume</a></li>
                 <li><a href="#contact" onclick="color(2)">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <div class="linkdiv" id="about" style="height: 75%;overflow: scroll">
+    <div class="linkdiv" id="about" style="height: 100%;overflow: scroll">
         <div class="container">
             <h1>About Me</h1>
             <br>
@@ -93,10 +100,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script type="text/javascript">
     function color(n) {
-        if(n == 2) {
+        if (n == 2) {
             $("body").css('background', "#2D2D2D")
-        }
-        else {
+        } else {
             $("body").css('background', '#FFF')
         }
     }
@@ -105,20 +111,29 @@
     $("li").click(function() {
         $(".linkdiv").hide();
         var id = $(this).find('a').attr('href')
+        var h = (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) ? "100" : "60";
         if ($("#main").height() < .5 * $(window).height())
             $("#main").animate({
                 height: $(window).height() - $("#remainderdiv").height()
             }, 500, function() {
                 $("#main").animate({
-                    height: "-=60%"
+                    height: "-=" + h + "%"
                 }, 750, function() {
+                    if (h == "100") {
+                        $("#name").hide();
+                        $("#abt").hide();
+                    }
                     $(id).fadeIn(1000);
-                    $(window).resize()
+                    $(window).resize();
                 })
             })
         else $("#main").animate({
-            height: "-=60%"
+            height: "-=" + h + "%"
         }, 500, function() {
+            if (h == "100") {
+                $("#name").hide();
+                $("#abt").hide();
+            }
             $(id).fadeIn(1000)
         })
     })
