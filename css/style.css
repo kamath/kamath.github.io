@@ -75,6 +75,20 @@ h5 {
     display: none;
 }
 
+.img {
+    float: left;
+}
+
+.desc {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: right;
+}
+
+.fa {
+    color: #FFF;
+}
+
 @-webkit-keyframes gradbg {
     0% {
         background-position: 0% 50%
