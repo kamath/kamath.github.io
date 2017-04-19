@@ -26,21 +26,28 @@
                 <div class="container" align="center">
                     <h1 class="wow fadeInUp" id="intro">Hi <span class="wow fadeInUp" data-wow-delay="1s">I'm</span></h1>
                     <h1 class="title animated fadeInUp" style="display:none" id="name">Andy Kamath</h1>
-                    <h3 class="animated fadeInUp" style="display:none" id="abt">Full-stack and ML Engineer</h3>
+                    <h4 class="animated fadeInUp" style="display:none" id="abt">Full-stack and ML Engineer</h4>
                 </div>
             </div>
         </div>
     </div>
     <nav id="remainderdiv">
         <div class="nav-wrapper" style="background: #000; padding-left: 50px; padding-right: 50px">
-            <a href="#" class="brand-logo">AK</a>
+            <a href="#" class="brand-logo title">AK</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Components</a></li>
                 <li><a href="collapsible.html">JavaScript</a></li>
             </ul>
         </div>
     </nav>
+    <div class="linkdiv" id="about" style="height: 75%;overflow: scroll">
+        <div class="container">
+            <h1>About Me</h1>
+            <br><br>
+            <h5>I'm a Data Science student at Northeastern University in Boston, MA. I'm supposed to start in the <b>fall of 2017</b>, but am considering a gap year to work and reduce costs of tuition. I've recently taken to projects involving AI and machine learning using Python, and I love exploring the field. <br><br>Starting with Geoffrey Hinton's Neural Networks course on Coursera and Andrew Ng's on Machine Learning, I started applying my knowledge on <a href="https://www.linkedin.com/pulse/weighted-majority-classification-improve-diabetic-andy-kamath">research projects</a>, <a href="http://github.com/counteractio/counteract">civic good</a>, and <a href="http://gllass.com">consumer products.</a></h5>
+        </div>
+    </div>
     <script type="text/javascript" src="/js/WOW.js"></script>
     <script type="text/javascript">
     new WOW().init();
@@ -51,7 +58,6 @@
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
@@ -61,27 +67,46 @@
                     return false;
                 }
             }
-            this.toggleClass("active");
         });
     });
+
     $(".button-collapse").sideNav();
+    $("li").click(function() {
+        $(".linkdiv").hide();
+        var id = $(this).find('a').attr('href')
+        if ($("#main").height() < .5 * $(window).height())
+            $("#main").animate({
+                height: $(window).height() - $("#remainderdiv").height()
+            }, 500, function() {
+                $("#main").animate({
+                    height: "-=60%"
+                }, 750, function() {
+                    $(id).fadeIn(1000)
+                })
+            })
+        else $("#main").animate({
+            height: "-=60%"
+        }, 500, function() {
+            $(id).fadeIn(1000)
+        })
+    })
 
     setTimeout(function() {
-            $("#intro").fadeOut(1000, function() {
-                $("#name").show();
-                setTimeout(function() {
-                    $("#abt").show(function() {
-                        $("#main").animate({
-                            height: $(window).height() - $("#remainderdiv").height()
-                        }, 500, function() {
-                            $("#remainderdiv").fadeIn(500);
-                        })
+        $("#intro").fadeOut(1000, function() {
+            $("#name").show();
+            setTimeout(function() {
+                $("#abt").show(function() {
+                    $("#main").animate({
+                        height: $(window).height() - $("#remainderdiv").height()
+                    }, 500, function() {
+                        $("#remainderdiv").fadeIn(500, function() {
+                            //$("body").css('overflow-y', 'scroll')
+                        });
                     })
-                }, 1000)
-            });
-        }, 1000)
-        /*
-         */
+                })
+            }, 1000)
+        });
+    }, 1000)
     </script>
 </body>
 
