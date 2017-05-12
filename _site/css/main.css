@@ -1,0 +1,42 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato');
+
+html,
+body {
+    height: 100%;
+}
+
+.parallax-container h1 {
+	font-family: 'Julius Sans One';
+	font-weight: 900;
+	font-size: 5vw
+}
+
+.imgcon {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFF;
+}
+
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+* {
+    font-family: 'Lato';
+}
+
+h1,
+h2,
+h3 {
+    margin: 0
+}
+
+.element {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

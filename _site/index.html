@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Andy Kamath</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript">
+        new WOW().init();
+        </script>
+    </head>
+
+    <body>
+        <div class="parallax-container" style="height: 100%">
+            <div class="imgcon">
+                <div class="container element" align="right">
+                    <h1 class="wow fadeInUp">Andy Kamath</h1>
+                    <h3 class="wow fadeInUp" style="font-weight: 1">Gummi Worm Connoisseur</h3>
+                </div>
+            </div>
+            <div class="parallax"><img src="img/bg.JPG" class="pimg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <div class="col m4" align="center">
+                    <h3 class="header wow fadeInUp">About Me</h3>
+                </div>
+                <div class="col m8">
+                    <h5 class="grey-text text-darken-3 wow fadeInUp">I love full-stack development and data analytics almost as much as I love gummi worms.<br><br>I'll be starting school at <b>Northeastern University</b> in Boston, MA in the fall of 2017. There, I will be studying <b>Data Science</b>.<br><br>I am considering taking a gap year to work to pay off tuition expenses.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-container" style="height: 100%">
+            <div class="imgcon">
+                <div class="container element" align="right">
+                    <h1 class="wow fadeInUp">Projects</h1>
+                    <h3 class="wow fadeInUp" style="font-weight: 1">Some stuff I did</h3>
+                </div>
+            </div>
+            <div class="parallax"><img src="img/bg1.jpg" class="pimg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container wow fadeIn">
+                <div class="col m4" align="center">
+                    <h3 class="header wow fadeInUp">DR Prescreen Optimization</h3>
+                </div>
+                <div class="col m8">
+                    <h5 class="grey-text text-darken-3 wow fadeInUp">I built a prescreening test for diabetic retinopathy that raised the sensitivity of a diagnosis to 97% while still maintaining a .85 area under the curve (AUC).</h5>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        // handle links with @href started with '#' only
+        $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // animated top scrolling
+            $('body, html').animate({
+                scrollTop: pos
+            });
+        });
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+
+        $(".pimg").css('width', 1.25 * $(window).width())
+        $(".m3").css('height', )
+        </script>
+        <!--
+<div id="intro">
+    <div class="imgcon">
+        <div class="container element" align="right">
+            <h1>Andy Kamath</h1>
+        </div>
+    </div>
+</div>
+-->
+    </body>
+
+</html>

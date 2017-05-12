@@ -1,68 +1,165 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Andy Kamath · Home</title>
-    <link rel="icon" href="https://d30y9cdsu7xlg0.cloudfront.net/png/20790-200.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Compiled and minified JavaScript -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="http://andykamath.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Andy Kamath's Website" />
-    <meta property="og:description" content="Data Scientist. 25% Python, 75% Water." />
-    <meta property="og:image" content="http://andykamath.com/isef.jpg" />
-</head>
 
-<body>
-    <div id="main">
-        <div id="mainc">
-            <div class="element">
-                <div class="container" align="center">
-                    <h1 class="wow fadeInUp" id="intro">Hi <span class="wow fadeInUp" data-wow-delay="1s">I'm</span></h1>
-                    <h1 class="title animated fadeInUp" style="display:none" id="name">Andy Kamath</h1>
-                    <h4 class="animated fadeInUp" style="display:none" id="abt">Full-stack and ML Engineer</h4>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Andy Kamath</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript">
+        new WOW().init();
+        </script>
+    </head>
+
+    <body>
+        <div class="parallax-container" style="height: 100%">
+            <div class="imgcon">
+                <div class="container element" align="right">
+                    <h1 class="wow fadeInUp">Andy Kamath</h1>
+                    <h3 class="wow fadeInUp" style="font-weight: 1">Gummi Worm Connoisseur</h3>
+                </div>
+            </div>
+            <div class="parallax"><img src="img/bg.JPG" class="pimg"></div>
+        </div>
+        <div class="section white">
+            <div class="row container">
+                <div class="col m4" align="left">
+                    <h3 class="header wow fadeInUp">About Me</h3>
+                </div>
+                <div class="col m8">
+                    <h5 class="wow fadeInUp">I love full-stack development and data analytics almost as much as I love gummi worms.<br><br>I'll be starting school at <b>Northeastern University</b> in Boston, MA in the fall of 2017. There, I will be studying <b>Data Science</b>.<br><br>I am considering taking a gap year to work to pay off tuition expenses.<br><br>Apart from CS, I'm an <b>Eagle Scout</b> and a <b>3rd degree black belt</b> in Taekwondo. I like to read <b>Sanskrit</b> and <b>Latin</b> texts in their originals, and I have held state-level officer positions in the Junior Classical League, along with <b>captaining NC's state team</b> in <b>national certamen</b> in 2016.</h5>
                 </div>
             </div>
         </div>
-    </div>
-    <nav id="remainderdiv">
-        <div class="nav-wrapper" style="background: #000; padding-left: 50px; padding-right: 50px">
-            <a href="#" class="brand-logo title">AK</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#about" onclick="color(1)">About</a></li>
-                <li><a href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view">Resume</a></li>
-                <li><a href="#contact" onclick="color(2)">Contact</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="#about" onclick="color(1)">About</a></li>
-                <li><a href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view">Resume</a></li>
-                <li><a href="#contact" onclick="color(2)">Contact</a></li>
-            </ul>
+        <div class="parallax-container" style="height: 100%">
+            <div class="imgcon">
+                <div class="container element" align="right">
+                    <h1 class="wow fadeInUp">Projects</h1>
+                    <h3 class="wow fadeInUp" style="font-weight: 1">Some stuff I did</h3>
+                </div>
+            </div>
+            <div class="parallax"><img src="img/bg1.jpg" class="pimg"></div>
         </div>
-    </nav>
-    <div class="linkdiv" id="about" style="height: 100%;overflow: scroll">
-        <div class="container">
-            <h1>About Me</h1>
-            <br>
-            <br>
-            <h5>I'm a <b>Data Science</b> student at <b>Northeastern University in Boston, MA</b>. I'm supposed to start in the <b>fall of 2017</b>, but am considering a gap year to work and reduce costs of tuition. <br><br>I love AI/ML and I have applied my knowledge with <a href="https://www.linkedin.com/pulse/weighted-majority-classification-improve-diabetic-andy-kamath">research projects</a>, <a href="http://github.com/counteractio/counteract">civic good</a>, and <a href="http://gllass.com">consumer products</a>. Apart from AIML, I also do full-stack development with MEAN and Flask. My full-stack projects involve <a href="https://github.com/andykamath/song2pic">things done for fun</a>, <a href="https://github.com/andykamath/Jarvis-Kamath">consumer products</a>, and <a href="http://imaginebernie.com">civic projects</a>.<br><br>My work has been featured in <a href="http://www.businessinsider.com/bernie-campaigners-on-tinder-facebook-twitter-2016-2">Tech Insider</a>, <a href="http://www.wral.com/nccu-cancels-long-running-high-school-program-third-university-in-nc-to-drop-out/15163739/">WRAL News</a>, and <a href="http://www.huffingtonpost.com/steve-bhaerman/bernie-is-the-future_b_9423828.html">The Huffington Post</a>.<!--<br><br>I spend some of my non-CS time mastering ancient languages like <a href="http://github.com/linguae/linguae.github.io">Latin</a>, Sanskrit, and Attic Greek. I'm also an <b>Eagle Scout</b> and <b>3rd degree black belt</b> in Tae Kwon Do.--></h5>
+        <div class="section w">
+            <div class="row container wow fadeIn">
+                <div class="col m4" align="left">
+                    <h3 class="header wow fadeInUp">DR Prescreen Optimization</h3>
+                    <h4 class="desc wow fadeInUp">2017</h4>
+                </div>
+                <div class="col m8 wow fadeInUp">
+                    <h5>A machine learning-based prescreening test for diabetic retinopathy that raised the sensitivity of a diagnosis to 97% while still maintaining a .85 area under the curve (AUC). <a href="https://www.linkedin.com/pulse/weighted-majority-classification-improve-diabetic-andy-kamath">Read more here</a>.</h5>
+                    <h5><b>Technology Utilized</b></h5>
+                    <section>
+                        <h5 class="award">MATLAB</h5>
+                        <h5 class="award">Python</h5>
+                    </section>
+                    <h5><b>Awards Won</b></h5>
+                    <section>
+                        <h5 class="award">Intel Excellence in Computer Science Award</h5>
+                        <h5 class="award">US Army Silver Award</h5>
+                        <h5 class="award">Social &amp; Scientific Systems, Inc. Grand Award for Excellence in Public Health</h5>
+                        <h5 class="award">CLTSEF 2nd in Category and State Finalist</h5>
+                        <h5 class="award">NCSEF 3rd in Category Award</h5>
+                    </section>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="linkdiv" id="contact" style="height: 75%;overflow: scroll">
+        <div class="section">
+            <div class="row container wow fadeIn">
+                <div class="col m4" align="left">
+                    <h3 class="header wow fadeInUp">Counteract</h3>
+                    <h4 class="desc wow fadeInUp">2016</h4>
+                </div>
+                <div class="col m8 wow fadeInUp">
+                    <h5>Utilizing social media analytics in combination with Markov chains to fight mental health. We pitched to the UN Counterterrorism Executive Directorate. <a href="https://github.com/counteractIO/counteract">Read more here</a>.</h5>
+                    <h5><b>Technology Utilized</b></h5>
+                    <section>
+                        <h5 class="award">Python</h5>
+                    </section>
+                    <h5><b>Awards Won</b></h5>
+                    <section>
+                        <h5 class="award">United Nations H4H 1st Place Award</h5>
+                        <h5 class="award">North Carolina TSA FOSS Software Development 1st Place Award and National Finalist</h5>
+                        <h5 class="award">Trending on Github under Python-based projects</h5>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="section w">
+            <div class="row container wow fadeIn">
+                <div class="col m4" align="left">
+                    <h3 class="header wow fadeInUp">Jarvis-Kamath</h3>
+                    <h4 class="desc wow fadeInUp">2016</h4>
+                </div>
+                <div class="col m8 wow fadeInUp">
+                    <h5>Your own Facebook Messenger-enabled personal assistant. <a href="https://github.com/andykamath/Jarvis-Kamath">Read more here</a>.</h5>
+                    <h5><b>Technology Utilized</b></h5>
+                    <section>
+                        <h5 class="award">Node.js</h5>
+                        <h5 class="award">AppleScript</h5>
+                    </section>
+                    <h5><b>Awards Won</b></h5>
+                    <section>
+                        <h5 class="award">Allowed me to get a most-viewed author in AI position from Quora. <a href="https://www.quora.com/How-much-of-what-Zuckerberg-achieved-with-Jarvis-can-the-average-engineer-set-up-in-his-own-home/answer/Andy-Kamath?srid=xB7E">Read the answer.</a></h5>
+                        <h5 class="award">Trending on Github under Python-based projects</h5>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row container wow fadeIn">
+                <div class="col m4" align="left">
+                    <h3 class="header wow fadeInUp">Gllass</h3>
+                    <h4 class="desc wow fadeInUp">2016</h4>
+                </div>
+                <div class="col m8 wow fadeInUp">
+                    <h5>Image analytics to predict number of likes on Instagram and generate captions. <a href="https://github.com/gllassapp/gllassapp.github.io">Read more here</a>.</h5>
+                    <h5><b>Technology Utilized</b></h5>
+                    <section>
+                        <h5 class="award">Python</h5>
+                    </section>
+                    <h5><b>Awards Won</b></h5>
+                    <section>
+                        <h5 class="award">Trending on Github under Python-based projects</h5>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="section w">
+            <div class="row container wow fadeIn">
+                <div class="col m4" align="left">
+                    <h3 class="header wow fadeInUp">EduCommit</h3>
+                    <h4 class="desc wow fadeInUp">2015</h4>
+                </div>
+                <div class="col m8 wow fadeInUp">
+                    <h5>A prototype of an educational enrichment social media platform.</h5>
+                    <h5><b>Technology Utilized</b></h5>
+                    <section>
+                        <h5 class="award">Node.js</h5>
+                        <h5 class="award">Express.js</h5>
+                        <h5 class="award">MongoDB</h5>
+                    </section>
+                    <h5><b>Awards Won</b></h5>
+                    <section>
+                        <h5 class="award">Catalyst Award for Excellence in Scientific Research</h5>
+                        <h5 class="award">Trending on Github under Python-based projects</h5>
+                    </section>
+                </div>
+            </div>
+        </div>
         <div class="jumbotron jumbotron-job" align="center" style="background: #2D2D2D;color: #FFF" id="contact">
             <div class="container">
-                <h2 class="animated fadeInUp title upper">Get <span class="animated fadeInUp title upper" delay="250ms">In</span> <span class="animated fadeInUp title upper" delay="500ms">Touch</span></h2>
-                <hr class="animated zoomIn" delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
+                <h2 class="wow fadeInUp title upper">Get <span class="wow fadeInUp title upper" data-wow-delay="250ms">In</span> <span class="wow fadeInUp title upper" data-wow-delay="500ms">Touch</span></h2>
+                <hr class="wow zoomIn" data-wow-delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
                 <h5>Shoot me an email at <u><a style="color: #FFF" href="mailto:andy@andykamath.com">andy@andykamath.com</a></u> or use the form below!</h5>
-                <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="animated fadeIn" delay="500ms">
+                <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="wow fadeIn" data-wow-delay="500ms">
                     <ol role="list" class="ss-question-list" style="padding-left: 0">
                         <input type="email" placeholder="Your Email *" name="entry.590052548" value="" class="ss-q-short" id="entry_590052548" dir="auto" aria-label="Name  " aria-required="true" required="" title="" style="width:50%">
                         <br>
@@ -75,7 +172,7 @@
                         <input type="hidden" name="fbzx" value="-358895960907417255">
                         <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
                 </form>
-                <h1><a target="_blank" href="http://fb.com/hackgician"><i class="fa fa-facebook animated fadeInUp" delay="500ms"></i></a> <a target="_blank" href="http://twitter.com/baesedandy"><i class="fa fa-twitter animated fadeInUp" delay="250ms"></i></a> <a target="_blank" href="http://andykamath.com/linkedin"><i class="fa fa-linkedin animated fadeInUp"></i></a> <a target="_blank" href="http://github.com/andykamath"><i class="fa fa-github animated fadeInUp"></i></a> <a target="_blank" href="https://www.quora.com/profile/Andy-Kamath"><i class="fa fa-quora animated fadeInUp" delay="250ms"></i></a> <a target="_blank" href="http://instagram.com/andykamath"><i class="fa fa-instagram animated fadeInUp" delay="500ms"></i></a></h1>
+                <h1><a target="_blank" href="http://fb.com/hackgician"><i class="fa fa-facebook wow fadeInUp" data-wow-delay="500ms"></i></a> <a target="_blank" href="http://twitter.com/baesedandy"><i class="fa fa-twitter wow fadeInUp" data-wow-delay="250ms"></i></a> <a target="_blank" href="http://andykamath.com/linkedin"><i class="fa fa-linkedin wow fadeInUp"></i></a> <a target="_blank" href="http://github.com/andykamath"><i class="fa fa-github wow fadeInUp"></i></a> <a target="_blank" href="https://www.quora.com/profile/Andy-Kamath"><i class="fa fa-quora wow fadeInUp" data-wow-delay="250ms"></i></a> <a target="_blank" href="http://instagram.com/andykamath"><i class="fa fa-instagram wow fadeInUp" data-wow-delay="500ms"></i></a></h1>
                 <a target="_blank" href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view" style="color: #FFF"><h5>View my resume <i class="fa fa-angle-right"></i></h5></a>
                 <script>
                 ! function(d, s, id) {
@@ -91,77 +188,36 @@
                 </script>
             </div>
         </div>
-    </div>
-    <script type="text/javascript" src="/js/WOW.js"></script>
-    <script type="text/javascript">
-    new WOW().init();
-    </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-    <script type="text/javascript">
-    function color(n) {
-        if (n == 2) {
-            $("body").css('background', "#2D2D2D")
-        } else {
-            $("body").css('background', '#FFF')
-        }
-    }
+        <script type="text/javascript">
+        // handle links with @href started with '#' only
+        $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
 
-    $(".button-collapse").sideNav();
-    $("li").click(function() {
-        $(".linkdiv").hide();
-        var id = $(this).find('a').attr('href')
-        var h = (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) ? "100" : "60";
-        if ($("#main").height() < .5 * $(window).height())
-            $("#main").animate({
-                height: $(window).height() - $("#remainderdiv").height()
-            }, 500, function() {
-                $("#main").animate({
-                    height: "-=" + h + "%"
-                }, 750, function() {
-                    if (h == "100") {
-                        $("#name").hide();
-                        $("#abt").hide();
-                    }
-                    $(id).fadeIn(1000);
-                    $(window).resize();
-                })
-            })
-        else $("#main").animate({
-            height: "-=" + h + "%"
-        }, 500, function() {
-            if (h == "100") {
-                $("#name").hide();
-                $("#abt").hide();
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
             }
-            $(id).fadeIn(1000)
-        })
-    })
 
-    setTimeout(function() {
-        $("#intro").fadeOut(1000, function() {
-            $("#name").show();
-            setTimeout(function() {
-                $("#abt").show(function() {
-                    $("#main").animate({
-                        height: $(window).height() - $("#remainderdiv").height()
-                    }, 500, function() {
-                        $("#remainderdiv").fadeIn(500, function() {
-                            //$("body").css('overflow-y', 'scroll')
-                        });
-                    })
-                })
-            }, 1000)
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top;
+
+            // wow top scrolling
+            $('body, html').animate({
+                scrollTop: pos
+            });
         });
-    }, 1000)
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
 
-    $("[delay]").click(function() {
-        $(this).css('animation-delay', $(this).attr('delay'));
-        $(this).css('-webkit-animation-delay', $(this).attr('delay'));
-    })
-
-    $("[delay]").click();
-    </script>
-</body>
+        $(".pimg").css('width', 1.25 * $(window).width())
+        $(".m3").css('height', )
+        </script>
+    </body>
 
 </html>
