@@ -2,23 +2,10 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 html,
 body {
     height: 100%;
-}
-
-.parallax-container h1 {
-	font-family: 'Julius Sans One';
-	font-weight: 900;
-	font-size: 5vw
-}
-
-.imgcon {
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #FFF;
 }
 
 .container {
@@ -30,20 +17,16 @@ body {
     font-family: 'Lato';
 }
 
-.w {
-    background: #F7F7F7;
-}
-/*
-.gray {
-    background: #1F1F21;
-    color: #F7F7F7
-}
-*/
-
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0
+}
+
+.title {
+    font-family: 'Julius Sans One';
+    font-weight: 700
 }
 
 .element {
@@ -52,27 +35,28 @@ h3 {
     transform: translateY(-50%);
 }
 
-.show {
-    list-style-type: disc
+#main {
+    height: 100%
 }
 
-.award {
-    text-indent: 20px;
-    font-size: 20px 
+.row {
+    margin: 0
 }
 
-.award:before {
-    content: "· "
+.card {
+    width: 30%;
+    max-height: 50%;
 }
 
-.desc:before {
-    content: "("
+.fa-stack {
+    font-size: 50px
 }
 
-.desc:after {
-    content: ")"
-}
-
-.fa {
-    color: #FFF
+@media (max-width: 320px) {
+    .card {
+        width: 75%;
+    }
+    .fa-stack {
+        font-size: 40px
+    }
 }
