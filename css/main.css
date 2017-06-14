@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato');
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato|Pacifico');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 html,
@@ -20,7 +20,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+p {
     margin: 0
 }
 
@@ -59,4 +61,21 @@ h4 {
     .fa-stack {
         font-size: 40px
     }
+}
+
+#match {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    z-index: 5;
+    margin: 0;
+}
+
+.match {
+    font-family: Pacifico;
+}
+
+.mimg {
+    height: 150px;    
 }

@@ -61,11 +61,34 @@ function change() {
         if (start >= img.length - 1) $(".green-text").hide();
         if (start == 0) $(".pink-text").hide();
         if (start > 0) $(".pink-text").show();
-        if (start < img.length - 1) $(".green-text").show();
+        if (start < img.length - 1) $("#next").show();
+        if (start == img.length - 1) $("#matchbtn").show()
         $(".card").animate({
-        	opacity: 1
+            opacity: 1
         })
     })
 }
 
+function match() {
+    $("body").css('background', 'rgb(0,0,0)')
+    $("#match").fadeIn(500)
+}
+
+function contact() {
+    $("body").css('background', '#2D2D2D')
+    $("#match").fadeOut(1000)
+    $("#contact").show()
+    $("#cards").animate({
+        height: 0,
+        opacity: 0
+    }, 1000)
+    $("#contact").animate({
+        height: '100%'
+    });
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+}
+
 next()
+$("#match").hide()
+$("#matchbtn").hide()
+$("#contact").hide()
