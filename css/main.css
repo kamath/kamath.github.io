@@ -1,6 +1,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lato|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 html,
@@ -10,7 +10,6 @@ body {
 
 .container {
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 * {
@@ -27,7 +26,7 @@ p {
 }
 
 .title {
-    font-family: 'Julius Sans One';
+    font-family: 'Poppins';
     font-weight: 700
 }
 
@@ -37,45 +36,55 @@ p {
     transform: translateY(-50%);
 }
 
-#main {
-    height: 100%
+.titlecon {
+    height: 50vh;
+    background-size: cover;
+    
 }
 
-.row {
-    margin: 0
-}
-
-.card {
-    width: 30%;
-    max-height: 50%;
-}
-
-.fa-stack {
-    font-size: 50px
-}
-
-@media (max-width: 320px) {
-    .card {
-        width: 75%;
-    }
-    .fa-stack {
-        font-size: 40px
-    }
-}
-
-#match {
+.blanket {
+    background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.9);
-    position: fixed;
-    z-index: 5;
-    margin: 0;
+    color: #FFF;
 }
 
-.match {
-    font-family: Pacifico;
+.profpic {
+    width: 25vh;
+    height: 25vh;
+    margin-bottom: 20px
 }
 
-.mimg {
-    height: 150px;    
+#main > .blanket {
+    padding-bottom: 50px;
+}
+
+#main {
+    background: url(../img/bg.jpg);
+    background-position: center 25%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#awards {
+    padding-bottom: 50px
+}
+
+#projectlist > li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: 20px;
+    counter-increment: foo;
+    display: table-row;
+}
+
+#projectlist {
+    counter-reset: foo;
+    display: table;
+}
+
+#projectlist > li::before {
+    content: counter(foo) ".";
+    display: table-cell; /* aha! */
+    text-align: right;
 }

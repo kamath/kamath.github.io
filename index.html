@@ -11,71 +11,106 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script type="text/javascript">
-        new WOW().init();
-        </script>
     </head>
 
     <body>
-        <!--<div id="main" class="grey-text text-darken-3 fixed">
-            <div class="element">
-                <div class="container">
-                    <h3>Hi I'm</h3>
-                    <h1>Andy Kamath</h1>
-                    <h5>I like machine learning and full-stack development</h5>
-                    <h5 id="explore"><a href="#" class="grey-text text-darken-2">Explore <i class="fa fa-angle-right"></i></a></h5>
-                </div>
-            </div>
-        </div>-->
-        <div id="match">
-            <div class="element" style="color: #FFF">
+        <div class="main" id="main">
+            <div class="blanket">
                 <div class="container" align="center">
-                    <h1 class="match">It's a Match!</h1>
-                    <h5>(please hire me)</h5>
-                    <br>
-                    <img class="mimg" src="img/me1.jpg" style="border-radius: 50%;">
-                    <br>
-                    <br>
-                    <a class="btn white black-text" onclick="contact()">Send me a Message</a>
+                    <img src="img/me1.jpg" class="circle profpic">
+                    <h2 class="title">Andy Kamath <i class="fa fa-check-circle blue-text"></i></h2>
+                    <h5>Biotech Enthusiast &middot; Northeastern '21</h5>
                 </div>
             </div>
         </div>
-        <div style="height: 100%;" id="cards">
-            <div class="element" align="center">
-                <div class="card" align="left">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/me1.jpg">
+        <div id="about">
+            <div class="container">
+                <h3 class="title">About Me</h3>
+                <br>
+                <p>Hey! I'm Andy, but you'll often see me spell my name with an ampersand (&amp;e). I'm 18 and a <a href="http://www.ccis.northeastern.edu/research-area/data-science/">Data Science</a> student at <a href="http://northeastern.edu">Northeastern University</a>. I have a strong passion for <a href="#counteract">biotechnology</a>, but more so for just real life <a href="http://github.com/andykamath">applications of machine learning</a>. I also have a keen interest in learning ancient languages, like Latin and Sanskrit. My nose is about as large as my collection of bad puns, and that's not counting spontaneous ones - who nose what I can come up with on the spot? Oh, I can't keep my eyes open when I smile.</p>
+            </div>
+        </div>
+        <div id="explorations">
+            <div class="container">
+                <h3 class="title">Explorations</h3>
+                <br>
+                <p>While no project is ever truly complete, these are some things I'm actively pursuing and trying to improve.</p>
+                <br>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/bg2.jpg">
+                                <div style="height: 100%;width: 100%;background: rgba(0,0,0,0.5);position: absolute;top: 0">
+                                    <span class="card-title">Colon Cancer Detection</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>Current prescreening methods are either sensitive and expensive or cheap and lacking in sensitivity. I used artificial intelligence to come up with a cheap, yet sensitive, approach to prescreening for colorectal cancer. I'm currently trying to consolidate it all into one device, and make that device reusable for multiple tests.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="http://counteract.io" class="blue-text">Website</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4"><span class="cardtitle"></span><i class="material-icons right" id="info">more_vert</i></span>
-                        <p><a href="#" class="grey-text text-darken-3">Click the image for more details</a></p>
+                    <div class="col s12 m6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="http://arleoeye.com/wp-content/themes/aeye2016/img/dia-pic1.jpg">
+                                <div style="height: 100%;width: 100%;background: rgba(0,0,0,0.8);position: absolute;top: 0">
+                                    <span class="card-title">Retinal Examinations</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p>I was able to come up with feature extraction algorithms in combination with ensemble ML methods that could boost AI-based diabetic retinopathy prescreening sensitivities to 96%. I'm trying to improve on this by creating a cheaper retinal imaging device.</p>
+                            </div>
+                            <div class="card-action blue-text">
+                                <a class="blue-text" href="https://www.linkedin.com/pulse/weighted-majority-classification-improve-diabetic-andy-kamath">Blog Post</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><span class="cardtitle"></span><i class="material-icons right">close</i></span>
-                        <p id="desc"></p>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <span class="fa-stack fa-lg pink-text" onclick="prev()">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-undo fa-stack-1x"></i>
-                    </span>
-                    <span class="fa-stack fa-lg green-text" id="next" onclick="next()">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-angle-right fa-stack-1x"></i>
-                    </span>
-                    <span class="fa-stack fa-lg green-text" onclick="match()" id="matchbtn">
-                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                        <i class="fa fa-angle-right fa-stack-1x"></i>
-                    </span>
                 </div>
             </div>
         </div>
-        <div class="jumbotron jumbotron-job" align="center" style="background: #2D2D2D;color: #FFF" id="contact">
-            <div class="element">
+        <div id="projects">
+            <div class="container">
+                <h3>Projects</h3>
+                <br>
+                <p>These are a few projects I've built in my spare time.</p>
+                <ul id="projectlist">
+                    <li><a href="http://github.com/andykamath/song2pic"><b>Song2Pic</b></a> (2017) - Representation of MIDI files as images. <b>Skills: </b>Python, Matplotlib.</li>
+                    <li><a href="http://github.com/counteractio/counteract"><b>Counteract</b></a> (2016)​ - NLP classification on public tweets and generation of happy replies through Markov chains to people who may be having a bad day and/or pose a threat to themselves or others. <b>Skills: </b>Python.</li>
+                    <li><a href="http://github.com/GllassApp/"><b>Gllass</b></a> (2016) ​- Predicts interaction with images on social media and automatically generates captions for images. <b>Skills: </b>Python, Caffe, Scikit-Learn.</li>
+                    <li><a href="http://imaginebernie.com"><b>ImagineBernie</b></a> (2016) - Served as CTO and actively campaigned for democratic presidential and senatorial candidates. Helped raise page to 200,000-person weekly reach and 10,000 combined social media followers. <b>Skills: </b>Social media marketing, MEAN.</li>
+                    <li><a href="http://github.com/andykamath/jarvis-kamath"><b>Jarvis</b></a> (2016) - Small version of Zuckerberg's Jarvis system on Facebook Messenger. <b>Skills: </b>Node.js, Facebook chat API.</li>
+                    <li><a href="http://github.com/andykamath/trickledownml"><b>Trickle Down ML</b></a> (2016) - Ronald Reagan chatbot on Facebook Messenger. <b>Skills: </b>Tensorflow, Python.</li>
+                    <li><a href="http://github.com/eduCommit/"><b>eduCommit</b></a> (2015) - ​prototype of educational social network software. <b>Skills: </b>MEAN, Bootstrap.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="awards">
+            <div class="container">
+                <h3>Awards</h3>
+                <br>
+                <p>These are some of the things I've won for my work:</p>
+                <ul id="projectlist">
+                    <li><b>1st in FOSS Development and National Finalist</b> (2017). National Technology Students Association. For Counteract development.</li>
+                    <li><b>3rd in Technology Research</b> (2017). NC Biogen Foundation. For research into diabetic retinopathy prescreening optimization.</li>
+                    <li><b>Intel Excellence in Computer Science</b> (2017). Intel. For research into diabetic retinopathy prescreening optimization.</li>
+                    <li><b>US Army Silver Medal</b> (2017). US Army. For research into diabetic retinopathy prescreening optimization.</li>
+                    <li><b>SSSI Founder's Award for Excellence in Public Health</b> (2017). SSSI. For research into diabetic retinopathy prescreening optimization.</li>
+                    <li><b>Most Viewed Writer - Artificial Intelligence</b> (2017). Quora. For being among the top 5 writers on the AI topic.</li>
+                    <li><b>United Nations U4H Grand Award</b> (2016). United Nations Office of Information and Communications Technology. For Counteract development. Presented to members of the UN Counterterrorism Executive Directorate.</li>
+                    <li><b>Eagle Scout Candidate</b> (2017). Boy Scouts of America. For over 9 years of demonstrated leadership and service to my community. Currently undergoing final boards of review.</li>
+                    <li><b>Presidential Volunteer Service Award</b> (2014, 2015 [Gold], 2016 [Bronze]). Office of the President. For 300+ hours of service.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-job" align="center" style="background: #2D2D2D;color: #FFF;padding-bottom: 30px" id="contact">
                 <div class="container" align="center">
                     <h2 class="wow fadeInUp white-text title upper">Get <span class="wow fadeInUp white-text title upper" data-wow-delay="250ms">In</span> <span class="wow fadeInUp white-text title upper" data-wow-delay="500ms">Touch</span></h2>
                     <hr class="wow zoomIn" data-wow-delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
@@ -110,7 +145,6 @@
                         }
                     }(document, 'script', 'twitter-wjs');
                     </script>
-                </div>
             </div>
         </div>
         <script type="text/javascript" src="js/main.js"></script>
