@@ -76,6 +76,10 @@ p {
     height: 50vh
 }
 
+.c {
+    height: 3vh
+}
+
 .padding {
     padding-bottom: 100px
 }
