@@ -15,152 +15,225 @@
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.1/vivus.min.js"></script>
     </head>
 
     <body>
-        <div class="main" id="main">
-            <div class="blanket">
-                <div class="container" align="center">
-                    <img src="img/me1.jpg" class="circle profpic">
-                    <div>
-                        <h2 class="title" style="display: inline">Andy Kamath<h5 class="fa-stack" style="vertical-align: top;"><i class="fa fa-circle blue-text fa-stack-2x"></i><i class="fa fa-check fa-stack-1x"></i></h5></h2>
-                    </div>
-                    <h5>Biotech Enthusiast &middot; Northeastern '21</h5>
-                </div>
+        <div class="e80 black white-text text-lighten-3" align="center">
+            <div class="container element">
+                <h1 class="title wow fadeInUp" data-wow-duration="750ms">Anirudh (Andy) Kamath</h1>
+                <h3 class="wow fadeInUp hide-on-small-only">Data Scientist. <span class="wow fadeInUp">Full-Stack Developer.</span></h3>
             </div>
         </div>
-        <div id="about">
-            <div class="container">
-                <h3 class="title">About Me</h3>
-                <br>
-                <p>Hey! I'm Andy, but you'll often see me spell my name with an ampersand (&amp;e). I'm 18 and a <a href="http://www.ccis.northeastern.edu/research-area/data-science/">Data Science</a> student at <a href="http://northeastern.edu">Northeastern University</a>. I have a strong passion for <a href="#counteract">biotechnology</a>, but more so for just real life <a href="http://github.com/andykamath">applications of machine learning</a>. I also have a keen interest in learning ancient languages, like Latin and Sanskrit. My nose is about as large as my collection of bad puns, and that's not counting spontaneous ones - who nose what I can come up with on the spot? Oh, I can't keep my eyes open when I smile.</p>
-            </div>
+        <div>
+            <div class="animated short black bottom"></div>
         </div>
-        <div id="explorations">
-            <div class="container">
-                <h3 class="title">Explorations</h3>
-                <br>
-                <p>While no project is ever truly complete, these are some things I'm actively pursuing and trying to improve.</p>
-                <br>
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="img/bg2.jpg">
-                                <div style="height: 100%;width: 100%;background: rgba(0,0,0,0.5);position: absolute;top: 0">
-                                    <span class="card-title">Colon Cancer Detection</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p>Current prescreening methods are either sensitive and expensive or cheap and lacking in sensitivity. I used artificial intelligence to come up with a cheap yet sensitive approach to prescreening for colorectal cancer. I'm currently trying to consolidate it all into one device and make that device reusable for multiple tests.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="http://counteract.io" class="blue-text">Website</a>
-                            </div>
+        <div id="about" class="cparent">
+            <div class="element">
+                <div class="container rotate">
+                    <div class="row">
+                        <div class="col m9">
+                            <h3 class="title wow fadeInUp">About <span class="title wow fadeInUp" data-wow-delay="100ms">Me</span></h3>
+                            <br>
+                            <p class="wow fadeInUp">I'm from Charlotte, NC, but I'm currently <b>studying Data Science</b> at Northeastern University in Boston, MA. I have a keen interest in computer vision and natural language processing, with a focus on their applications towards <b>biomedicine and/or finance</b>. I founded <a href="http://counteract.io">CounteractIO</a>, which is an ML company focused on building cool stuff and FOSSing them. <span class="hide-on-med-and-up"><br><br></span></p>
                         </div>
-                    </div>
-                    <div class="col s12 m6">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="http://arleoeye.com/wp-content/themes/aeye2016/img/dia-pic1.jpg">
-                                <div style="height: 100%;width: 100%;background: rgba(0,0,0,0.8);position: absolute;top: 0">
-                                    <span class="card-title">Retinal Examinations</span>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p>I was able to come up with feature extraction algorithms in combination with ensemble ML methods that could boost AI-based diabetic retinopathy prescreening sensitivities to 96%. I'm trying to improve on this by creating a cheaper retinal imaging device.</p>
-                            </div>
-                            <div class="card-action blue-text">
-                                <a class="blue-text" href="https://www.linkedin.com/pulse/weighted-majority-classification-improve-diabetic-andy-kamath">Blog Post</a>
-                            </div>
-                        </div>
+                        <div class="col m3 circle hide-on-small-only square black wow fadeInRight" style="position: relative;background: url(img/me1.jpg);background-size: cover;background-position: center;top: 0"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="projects">
-            <div class="container">
-                <h3 class="title">Projects</h3>
-                <br>
-                <p>These are a few projects I've built in my spare time.</p>
-                <ul id="projectlist">
-                    <li><a href="http://github.com/andykamath/song2pic"><b>Song2Pic</b></a> (2017) - Representation of MIDI files as images. <b>Skills: </b>Python, Matplotlib.</li>
-                    <li><a href="http://github.com/counteractio/counteract"><b>Counteract</b></a> (2016)​ - NLP classification on public tweets and generation of happy replies through Markov chains to people who may be having a bad day and/or pose a threat to themselves or others. <b>Skills: </b>Python.</li>
-                    <li><a href="http://github.com/GllassApp/"><b>Gllass</b></a> (2016) ​- Predicts interaction with images on social media and automatically generates captions for images. <b>Skills: </b>Python, Caffe, Tensorflow, Scikit-Learn.</li>
-                    <li><a href="http://imaginebernie.com"><b>ImagineBernie</b></a> (2016) - Served as CTO and actively campaigned for democratic presidential and senatorial candidates. Helped raise page to 200,000-person weekly reach and 9,000 combined social media followers. <b>Skills: </b> SEO, MEAN.</li>
-                    <li><a href="http://github.com/andykamath/jarvis-kamath"><b>Jarvis</b></a> (2016) - Small version of Zuckerberg's Jarvis system on Facebook Messenger. <b>Skills: </b>Node.js, Facebook chat API.</li>
-                    <li><a href="http://github.com/andykamath/trickledownml"><b>Trickle Down ML</b></a> (2016) - Ronald Reagan chatbot on Facebook Messenger. <b>Skills: </b>Tensorflow, Python.</li>
-                    <li><a href="http://github.com/eduCommit/"><b>eduCommit</b></a> (2015) - ​prototype of educational social network software. <b>Skills: </b>MEAN, Bootstrap.</li>
-                </ul>
+        <div class="black">
+            <div class="wow animated short white bottom"></div>
+        </div>
+        <div class="grey-text text-lighten-3">
+            <div class="black curtain animated valign-wrapper">
+                <div class="container" style="z-index: 50">
+                    <h1 class="title wow fadeInUp" data-wow-offset="100">Projects</h1>
+                </div>
             </div>
         </div>
-        <div id="awards">
-            <div class="container">
-                <h3 class="title">Awards</h3>
-                <br>
-                <p>These are some of the things I've won for my work:</p>
-                <ul id="projectlist">
-                    <li><b>1st in FOSS Development and National Finalist</b> (2017). National Technology Students Association. For Counteract development.</li>
-                    <li><b>3rd in Technology Research</b> (2017). NC Biogen Foundation. For research into diabetic retinopathy prescreening optimization.</li>
-                    <li><b>Intel Excellence in Computer Science</b> (2017). Intel. For research into diabetic retinopathy prescreening optimization.</li>
-                    <li><b>US Army Silver Medal</b> (2017). US Army. For research into diabetic retinopathy prescreening optimization.</li>
-                    <li><b>SSSI Founder's Award for Excellence in Public Health</b> (2017). SSSI. For research into diabetic retinopathy prescreening optimization.</li>
-                    <li><b>Most Viewed Writer - Artificial Intelligence</b> (2017). Quora. For being among the top 5 writers on the AI topic.</li>
-                    <li><b>United Nations U4H Grand Award</b> (2016). United Nations Office of Information and Communications Technology. For Counteract development. Presented to members of the UN Counterterrorism Executive Directorate.</li>
-                    <li><b>Eagle Scout Candidate</b> (2017). Boy Scouts of America. For over 9 years of demonstrated leadership and service to my community. Currently undergoing final boards of review.</li>
-                    <li><b>Presidential Volunteer Service Award</b> (2014, 2015 [Gold], 2016 [Bronze]). Office of the President. For 300+ hours of service.</li>
-                </ul>
+        <div id="projects" class="black">
+            <div class="row" align="center">
+                <div class="col m3 s12 rect wow fadeIn" data-wow-delay="200ms" style="padding:0;background: url(img/bg2.jpg);background-size: cover" align="center">
+                    <div class="fill curtain white-text center-align" align="center">
+                        <div class="celement">
+                            <h3><a href="#ColoBoost" class="hover white-text">ColoBoost</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3 s12 rect wow fadeIn" data-wow-delay="100ms" style="padding:0;background: url(img/mountains.jpg);background-size: cover" align="center">
+                    <div class="fill curtain white-text center-align" align="center">
+                        <div class="celement">
+                            <h3><a href="#gllass" class="hover white-text">Gllass</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3 s12 rect wow fadeIn" data-wow-delay="300ms" style="padding:0;background: url(img/bg1.jpg);background-size: cover" align="center">
+                    <div class="fill curtain white-text center-align" align="center">
+                        <div class="celement">
+                            <h3><a href="#retinopathy" class="hover white-text">DR Screening</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3 s12 rect wow fadeIn" data-wow-delay="400ms" style="padding:0;background: url(img/un.jpeg);background-size: cover;background-position: center;" align="center">
+                    <div class="fill curtain white-text center-align" align="center">
+                        <div class="celement">
+                            <h3><a href="#counteract" class="hover white-text">Counteract</a></h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="media">
+        <div id="ColoBoost">
             <div class="container">
-                <h3 class="title">News</h3>
+                <h3 id="title" class="wow animated fadeIn title">ColoBoost</h3>
+                <h5 id="tagline" class="wow animated fadeInUp">Colon Cancer Screening - Faster and Better</h5>
                 <br>
-                <p>Sometimes my work caught the eye of other people</p>
-                <ul id="projectlist">
-                    <li><b><a href="http://www.businessinsider.com/bernie-campaigners-on-tinder-facebook-twitter-2016-2">TechInsider</a></b> (2016) - For work with ImagineBernie</li>
-                    <li><b><a href="http://www.wral.com/nccu-cancels-long-running-high-school-program-third-university-in-nc-to-drop-out/15163739/">WRAL</a></b> (2015) - For work with eduCommit</li>
-                </ul>
-            </div>
-        </div>
-        <div class="jumbotron jumbotron-job" align="center" style="background: #2D2D2D;color: #FFF;padding-bottom: 30px" id="contact">
-            <div class="container" align="center">
-                <h2 class="wow fadeInUp white-text title upper">Get <span class="wow fadeInUp white-text title upper" data-wow-delay="250ms">In</span> <span class="wow fadeInUp white-text title upper" data-wow-delay="500ms">Touch</span></h2>
-                <hr class="wow zoomIn" data-wow-delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
-                <h5>Shoot me an email at <u><a style="color: #FFF" href="mailto:andy@andykamath.com">andy@andykamath.com</a></u> or use the form below!</h5>
-                <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="wow fadeIn" data-wow-delay="500ms">
-                    <ol role="list" class="ss-question-list" style="padding-left: 0">
-                        <input type="email" placeholder="Your Email *" name="entry.590052548" value="" class="ss-q-short" id="entry_590052548" dir="auto" aria-label="Name  " aria-required="true" required="" title="" style="width:50%">
-                        <br>
-                        <br>
-                        <textarea name="entry.350270304" rows="8" cols="0" class="ss-q-long" id="entry_350270304" dir="auto" aria-label="How may I help you?  " placeholder="How may I help you?  " aria-required="true" required="" style="width:50%;border: 0"></textarea>
-                        <br>
-                        <input type="hidden" name="draftResponse" value="[,,&quot;-358895960907417255&quot;]
-">
-                        <input type="hidden" name="pageHistory" value="0">
-                        <input type="hidden" name="fbzx" value="-358895960907417255">
-                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
-                </form>
-                <div style="width: 100%" align="center">
+                <p id="content" class="wow animated fadeInUp">(2017) - Earlier this year, a close relative of mine was diagnosed with late-stage colon cancer. Seeing her go through the treatment process, I witnessed firsthand the inefficiencies of the current screening process. It's the most preventable cancer, yet the second most fatal. The good screening tests are expensive and take two weeks, and the faster/cheaper screening tests are inaccurate. I wanted to do something about this, so I used machine learning to build a test that's as accurate as the expensive one, with the speed and inexpensiveness of the cheaper one. My end result is 60x cheaper and 4,000x faster than current benchmarks like Cologuard, and once we finish clinical validation trials, this will prove to be a much more efficient way of diagnosing people early, when rates of survival are >94%, than in stage 4, when the survival rates are less than 10%.
                     <br>
-                    <h1><a target="_blank" href="http://fb.com/hackgician"><i class="fa fa-facebook wow fadeInUp white-text" data-wow-delay="500ms"></i></a> <a target="_blank" href="http://twitter.com/baesedandy"><i class="fa fa-twitter wow fadeInUp white-text" data-wow-delay="250ms"></i></a> <a target="_blank" href="http://andykamath.com/linkedin"><i class="fa fa-linkedin wow fadeInUp white-text"></i></a> <a target="_blank" href="http://github.com/andykamath"><i class="fa fa-github wow fadeInUp white-text" data-wow-delay="250ms"></i></a> <a target="_blank" href="https://www.quora.com/profile/Andy-Kamath"><i class="fa fa-quora wow fadeInUp white-text" data-wow-delay="500ms"></i></a></h1>
-                </div>
-                <!--<a target="_blank" href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view" style="color: #FFF"><h5>View my resume <i class="fa fa-angle-right"></i></h5></a>-->
-                <script>
-                ! function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0],
-                        p = 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + '://platform.twitter.com/widgets.js';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, 'script', 'twitter-wjs');
-                </script>
+                    <br>Read more:
+                    <br><a class="btn black" href="https://drive.google.com/file/d/0B3klChi2EIDMQkJaRm03YUprSnM/view">Write-Up</a> <a class="btn black" href="http://counteract.io">Website</a></p>
             </div>
         </div>
-        <script type="text/javascript" src="js/main.js"></script>
+        <div id="gllass">
+            <div class="container">
+                <h3 id="title" class="wow animated fadeIn title">Gllass</h3>
+                <h5 id="tagline" class="wow animated fadeInUp">Image analytics for social media</h5>
+                <br>
+                <p id="content" class="wow animated fadeInUp">(2016-17) - Last year, a friend and I built a platform to highlight popular and common features on a user's Instagram pictures so they can see what to post more in order to garner more attention to their profile. On top of this, we built a "like prediction" system that can work with just a 10% margin of error. This year, I added on to this by building a whole caption generation system.
+                    <br>
+                    <center><img src="img/chart.png" width="50%"></center>
+                    <br>In order to do this, I used the VGG16 pre-trained convolutional neural network model to generate tags, then ran them through to see which tags were associated with higher likes, and returned those as the most popular tags. Once that was complete, I vectorized all the tags associated with each image, and used it to train a random forest regression model. Once a new image was uploaded to have its likes predicted and a caption generated, the image was run through the CNN again and its tags were once again vectorized. I trained an RNN on encouraging quotes, then ran a beam search to generate a paragraph based on the tags generated by the CNN to make the caption relevant to the post. Since the RNN was incoherent, I combined its output with a Markov chain trained on the same encouraging quotes dataset in order to generate a caption that has some meaning. The tags were then put through the trained RF Regression model to generate a like prediction.
+                    <br>
+                    <br>Read more:
+                    <br><a class="btn black" href="https://github.com/GllassApp/Caption-Generator">Caption Generation</a> <a href="http://gllass.com" class="btn black">Demo</a></p>
+            </div>
+        </div>
+        <div id="retinopathy">
+            <div class="container">
+                <h3 id="title" class="wow animated fadeIn title">DR Screening</h3>
+                <h5 id="tagline" class="wow animated fadeInUp">ML for Retinopathy Screening</h5>
+                <br>
+                <p id="content" class="wow animated fadeInUp">(2017) - This was the first ML project I did entirely on my own. I built off an <a href="https://arxiv.org/abs/1410.8576">existing project</a> by Antal and Hajdu at the University of Debrecen in order to create a more sensitive model for diabetic retinopathy screening. In order to do so, I took their algorithms for AM-FM based feature detection given an image of the retina to extract features such as microaneurysms, lesions, and exudates in order to predict the retinopathy stage with 97% sensitivity.
+                    <br>
+                    <center><img src="img/DR.png" width="50%"></center>
+                    <br>In order to do this, I used ensemble methods composed of an artificial neural network, a logistic regression classifier, and a linear kernel support vector machine.
+                    <br>
+                    <br>Read more:
+                    <br><a class="btn black" href="https://www.linkedin.com/pulse/weighted-majority-classification-improve-diabetic-andy-kamath">Blog Post</a></p>
+            </div>
+        </div>
+        <div id="counteract">
+            <div class="container">
+                <h3 id="title" class="wow animated fadeIn title">Counteract</h3>
+                <h5 id="tagline" class="wow animated fadeInUp">Risk Analysis Platform for Social Media Threats</h5>
+                <br>
+                <p id="content" class="wow animated fadeInUp">(2017) - I jumped onto this project after a friend of mine won a hackathon with a basic prototype. Counteract helps detect people on Twitter who may be at risk of harming themselves or others. If a tweet is found to be of negative intentions, a happy/encouraging response tweet is generated back by Counteract.
+                    <br>
+                    <center><img src="img/HAN.png" width="30%" height="10%"></center>
+                    <br>In order to do this, I used a Tweet stream tool to constantly look for terms such as "suicide" or "kill" or other harshly negative terms. I ran each tweet through a <a href="https://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf">hierarchical attention network</a> to test whether or not it had any malintent. If this was found, a Markov chain was used to then generate a response tweet to the original user.
+                    <br>
+                    <br>Read more:
+                    <br><a class="btn black" href="https://github.com/counteractio/counteract">GitHub</a></p>
+            </div>
+        </div>
+        <center><a href="http://github.com/andykamath"><h4>View my GitHub <i class="fa fa-angle-right"></i></h4></a></center>
+            <div class="black">
+                <div class="animated wow short white bottom"></div>
+            </div>
+            <div class="e80 black white-text text-lighten-3" align="center" style="height: 20%">
+                <div class="container element">
+                    <h1 class="wow fadeInUp title">Awards</h1>
+                </div>
+            </div>
+            <div class="white">
+                <div class="animated wow short black bottom"></div>
+            </div>
+            <div id="awards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s6 m3 offset-m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/UN.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Unite for Humanity Grand Award</span>
+                                    <p>For development of Counteract</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="padding: 10%">
+                                    <img src="img/intel.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Excellence in Computer Science</span>
+                                    <p>For research into retinopathy screening.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6 m3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/TSA.png" style="padding: 20%">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">1st in FOSS/National Finalist</span>
+                                    <p>For development of Counteract.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-image" style="padding: 10%">
+                                    <img src="img/army.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title">Silver Medal</span>
+                                    <p>For research into retinopathy screening.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <center><a href="Resume.pdf"><h4>View full resume <i class="fa fa-angle-right"></i></h4></a></center>
+                </div>
+            </div>
+            <div class="jumbotron jumbotron-job black white-texts" align="center" style="padding-bottom: 30px" id="contact">
+                <div class="container" align="center">
+                    <h2 class="wow fadeInUp white-text title upper">Get <span class="wow fadeInUp white-text title upper" data-wow-delay="250ms">In</span> <span class="wow fadeInUp white-text title upper" data-wow-delay="500ms">Touch</span></h2>
+                    <hr class="wow zoomIn" data-wow-delay="750ms" style="width: 100px;border: 2px solid #2D2D2D">
+                    <h5>Shoot me an email at <u><a style="color: #FFF" href="mailto:andy@andykamath.com">andy@andykamath.com</a></u> or use the form below!</h5>
+                    <form action="https://docs.google.com/forms/d/1SfoEoEvrffm9Wwjv_JR6N77VcVjz2DX3w-SNmiYnnDc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="" class="wow fadeIn" data-wow-delay="500ms">
+                        <ol role="list" class="ss-question-list" style="padding-left: 0">
+                            <input type="email" placeholder="Your Email *" name="entry.590052548" value="" class="ss-q-short" id="entry_590052548" dir="auto" aria-label="Name  " aria-required="true" required="" title="" style="width:50%">
+                            <br>
+                            <br>
+                            <textarea name="entry.350270304" rows="8" cols="0" class="ss-q-long" id="entry_350270304" dir="auto" aria-label="How may I help you?  " placeholder="How may I help you?  " aria-required="true" required="" style="width:50%;border: 0"></textarea>
+                            <br>
+                            <input type="hidden" name="draftResponse" value="[,,&quot;-358895960907417255&quot;]
+">
+                            <input type="hidden" name="pageHistory" value="0">
+                            <input type="hidden" name="fbzx" value="-358895960907417255">
+                            <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action btn btn-primary">
+                    </form>
+                    <div style="width: 100%" align="center">
+                        <br>
+                        <h1><a target="_blank" href="http://fb.com/hackgician"><i class="fa fa-facebook wow fadeInUp white-text" data-wow-delay="500ms"></i></a> <a target="_blank" href="http://twitter.com/baesedandy"><i class="fa fa-twitter wow fadeInUp white-text" data-wow-delay="250ms"></i></a> <a target="_blank" href="http://andykamath.com/linkedin"><i class="fa fa-linkedin wow fadeInUp white-text"></i></a> <a target="_blank" href="http://github.com/andykamath"><i class="fa fa-github wow fadeInUp white-text" data-wow-delay="250ms"></i></a> <a target="_blank" href="https://www.quora.com/profile/Andy-Kamath"><i class="fa fa-quora wow fadeInUp white-text" data-wow-delay="500ms"></i></a></h1>
+                    </div>
+                    <!--<a target="_blank" href="https://drive.google.com/file/d/0B3KD7yJy-_ySNk9XTk1yN0FEMzg/view" style="color: #FFF"><h5>View my resume <i class="fa fa-angle-right"></i></h5></a>-->
+                    <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + '://platform.twitter.com/widgets.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+            </div>
+            <script type="text/javascript" src="js/main.js"></script>
     </body>
 
 </html>
