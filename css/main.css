@@ -40,10 +40,8 @@ p {
     transform: translateY(-50%);
 }
 
-.celement {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+li {
+  list-style-type: circle !important
 }
 
 /*
@@ -138,4 +136,9 @@ p {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.inner {
+ margin-top:1px;
+ border: 50px solid white;   
 }

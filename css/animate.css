@@ -19,6 +19,12 @@
     animation-fill-mode: forwards;
 }
 
+.animated.rshort {
+    animation-name: rshorten;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 .animated.infinite {
   animation-iteration-count: infinite;
 }
@@ -34,7 +40,7 @@
   animation-duration: .75s;
 }
 
-@keyframes shorten {
+@keyframes rshorten {
     from {
         -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
@@ -42,6 +48,18 @@
     to {
         -webkit-clip-path: polygon(0 100%, 100% 0%, 100% 0, 0 0);
         clip-path: polygon(0 100%, 100% 0%, 100% 0, 0 0);
+        /* For browsers that do not support gradients */
+    }
+}
+
+@keyframes shorten {
+    from {
+        -webkit-clip-path: polygon(100% 100%, 0 100%, 0 95%);
+clip-path: polygon(100% 100%, 0 100%, 0 95%);
+    }
+    to {
+        -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0);
+clip-path: polygon(100% 100%, 0 100%, 0 0);
         /* For browsers that do not support gradients */
     }
 }
