@@ -1,202 +1,88 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css);
 @import url(animate.css);
 
 /* @import url('https://fonts.googleapis.com/css?family=Lato|Poppins'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Fredoka+One&family=Lato&family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Poppins:wght@500&display=swap');
-@import url('waves.css');
 
 /* @import url('background.css'); */
 
 html,
 body {
-    height: 100%;
-    background: transparent;
-}
-
-.container {
-    padding-top: 50px;
-    padding-bottom: 50px
+	height: 100%;
+	background: transparent;
 }
 
 h1.title {
-    font-family: 'Poppins';
-    font-weight: 700
+	font-family: 'Poppins';
+	font-weight: 700
 }
 
 .title {
-    font-family: 'Poppins';
-    font-weight: 500;
+	font-family: 'Poppins';
+	font-weight: 500;
 }
 
 .subtitle {
-    font-family: 'Rubik';
+	font-family: 'Crimson Text';
 }
 
 * {
-    font-family: 'Lato';
-    background: transparent;
+	font-family: 'Lato';
+	background: transparent;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0
+.profpic-common {
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	/* other properties */
+	border-radius: 10px;
+	position: fixed;
+	left: 0;
+	right: 0;
 }
 
-.hunnid {
-    height: 100%;
+.profpic {
+	/* animation properties */
+	animation-name: profpic;
 }
 
-.bottom {
-    height: 20vh
+.profpic-reverse {
+	animation-name: profpic-reverse;
 }
 
-.element {
-    position: relative;
-    top: 60%;
-    transform: translateY(-50%);
+@keyframes profpic {
+	0% {
+		top: 10px;
+	}
+
+	50% {
+		left: 10px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
 }
 
-#hero {
-    height: 100%;
-    /* background: url(https://picsum.photos/480/200?random) 50% 0; */
-    margin: 0;
-}
+@keyframes profpic-reverse {
+	0% {
+		top: -10px;
+	}
 
-.vertical-center-container {
-    display: table;
-    width: 100%;
-}
+	50% {
+		left: -10px;
+	}
 
-.vertical-center-table-cell {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.clip {
-    background: whitesmoke;
-    background-attachment: fixed;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-weight: bold;
-}
-
-
-/* Clip text element */
-
-.clip-text {
-    font-size: 6em;
-    font-weight: bold;
-    line-height: 1;
-    position: relative;
-    display: inline-block;
-    margin: .25em;
-    padding: .5em .75em;
-    text-align: center;
-    /* Color fallback */
-    color: #fff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.clip-text:before,
-.clip-text:after {
-    position: absolute;
-    content: '';
-}
-
-
-/* Background */
-
-.clip-text:before {
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: inherit;
-}
-
-
-/* Text Background (black zone) */
-
-.clip-text:after {
-    position: absolute;
-    z-index: -1;
-    top: .125em;
-    right: .125em;
-    bottom: .125em;
-    left: .125em;
-    background-color: #000;
-}
-
-
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
-
-.clip-text_one {
-    background-image: url(https://picsum.photos/480/200?random);
-}
-
-.slide .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
-    text-align: center;
-    margin: 0
-}
-
-.intro {
-    background: #305a5b;
-}
-
-#parallax {
-    background: url(https://picsum.photos/480/200?random) 50% 0;
-    margin: 0;
-}
-
-.slidein2 {
-    background: #304b5b;
-}
-
-.slidein2 .row {
-    justify-content: space-around;
-}
-
-#subtitle {
-    display: inline-block;
-}
-
-.reallist>li {
-    list-style-type: square !important;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-div {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-h6 {
-    font-size: 20px
-}
-
-p {
-    font-size: 18px;
-}
-
-.smalltext {
-    font-size: 15px;
+	100% {
+		top: 0px;
+		left: 0px;
+	}
 }
