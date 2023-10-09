@@ -36,34 +36,69 @@ h1.title {
 }
 
 .profpic-common {
-	animation-duration: 2s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-direction: alternate;
 	animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
 
 	/* other properties */
-	border-radius: 10px;
-	position: fixed;
+	border-radius: 5px;
 	left: 0;
 	right: 0;
 }
 
 .profpic {
 	/* animation properties */
+	-webkit-animation-name: profpic;
 	animation-name: profpic;
 }
 
 .profpic-reverse {
+	-webkit-animation-name: profpic-reverse;
 	animation-name: profpic-reverse;
+}
+
+@-webkit-keyframes profpic {
+	0% {
+		top: 5px;
+	}
+
+	50% {
+		left: 5px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
 }
 
 @keyframes profpic {
 	0% {
-		top: 10px;
+		top: 5px;
 	}
 
 	50% {
-		left: 10px;
+		left: 5px;
+	}
+
+	100% {
+		top: 0px;
+		left: 0px;
+	}
+}
+
+@-webkit-keyframes profpic-reverse {
+	0% {
+		top: -5px;
+	}
+
+	50% {
+		left: -5px;
 	}
 
 	100% {
@@ -74,11 +109,11 @@ h1.title {
 
 @keyframes profpic-reverse {
 	0% {
-		top: -10px;
+		top: -5px;
 	}
 
 	50% {
-		left: -10px;
+		left: -5px;
 	}
 
 	100% {
